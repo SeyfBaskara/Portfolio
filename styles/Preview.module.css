@@ -1,0 +1,7 @@
+.preview {
+   display: flex;
+   margin: 6rem 0;
+}
+.preview__detail {
+   max-width: 70%;
+}

@@ -1,7 +1,26 @@
 .preview {
    display: flex;
-   margin: 6rem 0;
+   justify-content: center;
+   align-items: center;
+   min-height: 80vh;
 }
 .preview__detail {
    max-width: 70%;
+   /* margin-top: 2rem; */
+   padding-right: 2rem;
+}
+.preview__title {
+   font-size: 3rem;
+}
+.preview__profile {
+   /* margin-top: 5rem; */
+}
+.preview__links {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 0.8rem;
+}
+.preview__githubLink {
+   padding: 0 1rem;
 }

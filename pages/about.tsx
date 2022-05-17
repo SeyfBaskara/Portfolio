@@ -1,11 +1,15 @@
-import styles from '../styles/About.module.css'
 import About from '../components/About'
+import Head from 'next/head'
 
 const AboutPage = (): JSX.Element => {
    return (
-      <article className={styles.about}>
+      <>
+         <Head>
+            <title>About</title>
+            <link rel="icon" href="/favicon.ico" />
+         </Head>
          <About />
-      </article>
+      </>
    )
 }
 

@@ -18,3 +18,18 @@ nextButton.addEventListener('click', function () {
    selectedIndex++
    rotateCarousel()
 })
+
+{
+   /* <div className={styles.card}>
+               <h3 className={styles.title}>Languages</h3>
+            </div>
+            <div className={styles.card}>
+               <h3 className={styles.title}>Front End</h3>
+            </div>
+            <div className={styles.card}>
+               <h3 className={styles.title}>Back End</h3>
+            </div>
+            <div className={styles.card}>
+               <h3 className={styles.title}>Tools & Methods</h3>
+            </div> */
+}

@@ -1,0 +1,19 @@
+[
+   {
+      "iconNames": [
+         "html",
+         "css",
+         "sass",
+         "javascript",
+         "typescript",
+         "react",
+         "redux",
+         "nextJs",
+         "nodeJs",
+         "express",
+         "mongoDB",
+         "docker",
+         "github"
+      ]
+   }
+]

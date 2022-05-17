@@ -1,5 +1,6 @@
 import About from '../components/About'
 import Head from 'next/head'
+import AboutWidget from '../components/AboutWidget'
 
 const AboutPage = (): JSX.Element => {
    return (
@@ -9,6 +10,7 @@ const AboutPage = (): JSX.Element => {
             <link rel="icon" href="/favicon.ico" />
          </Head>
          <About />
+         <AboutWidget />
       </>
    )
 }

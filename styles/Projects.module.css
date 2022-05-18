@@ -1,0 +1,39 @@
+.project {
+}
+.project__title {
+   text-align: center;
+   margin: 3rem 0 4rem;
+   font-size: 3rem;
+}
+.project__cards {
+   display: flex;
+   gap: 5rem;
+   margin: 4rem 0;
+}
+.project__card {
+   border-radius: 1rem;
+   box-shadow: 2rem 2rem 4rem 0.5rem rgb(218, 214, 214);
+   text-align: center;
+   padding: 1rem 2rem 0;
+   height: 360px;
+   width: 370px;
+   background-color: whitesmoke;
+}
+
+.project__links {
+   display: flex;
+   justify-content: space-around;
+   justify-items: center;
+   margin-right: 2rem;
+}
+
+.project__link {
+   list-style: none;
+   padding: 0.7rem;
+   border: 2px solid rgb(218, 214, 214);
+   border-radius: 5px;
+}
+.project__link:hover {
+   background-color: hsla(210, 10%, 84%, 0.5);
+   transform: translateY(-3px) scale(1.01) translateZ(0);
+}

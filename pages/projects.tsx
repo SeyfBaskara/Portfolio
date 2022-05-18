@@ -1,11 +1,16 @@
-import Projects from '../components/Projects'
+import Project from '../components/Project'
+import Head from 'next/head'
 
-const projectsPage = (): JSX.Element => {
+const ProjectsPage: React.FC = () => {
    return (
       <>
-         <Projects />
+         <Head>
+            <title>Seyfettin Baskara</title>
+            <link rel="icon" href="/favicon.ico" />
+         </Head>
+         <Project />
       </>
    )
 }
 
-export default projectsPage
+export default ProjectsPage

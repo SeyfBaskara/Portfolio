@@ -1,7 +1,7 @@
-.widget {
-}
 .widget__title {
    text-align: center;
+   font-size: 1.5rem;
+   color: #737573;
 }
 .cards {
    display: grid;
@@ -9,52 +9,11 @@
    margin: 5rem 0;
    justify-items: center;
 }
-
 .card {
    display: flex;
    flex-direction: column;
    align-items: center;
 }
-
-/* .card {
-   display: flex;
-   height: 280px;
-   width: 200px;
-   border-radius: 10px;
-   transition: 0.4s ease-out;
-   position: relative;
-   left: 0px;
-}
-
-.card:not(:first-child) {
-   margin-left: -50px;
-}
-
-.card:hover {
-   transform: translateY(-20px);
-   transition: 0.4s ease-out;
-}
-
-.card:hover ~ .card {
-   position: relative;
-   left: 50px;
-   transition: 0.4s ease-out;
-}
-
-.card:nth-child(4n + 1) {
-   background: #b1d8cd;
-}
-.card:nth-child(4n + 2) {
-   background: #b5b3ab;
-}
-.card:nth-child(4n + 3) {
-   background: #b89e8e;
-}
-.card:nth-child(4n + 0) {
-   background: #968a79;
-   box-shadow: -0.5rem 0 3rem #968a79;
-} */
-
 .title {
    color: white;
    font-weight: 300;

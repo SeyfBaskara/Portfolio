@@ -1,9 +1,8 @@
-.project {
-}
 .project__title {
    text-align: center;
    margin: 4rem 0;
-   font-size: 2.5rem;
+   font-size: 2rem;
+   color: #737573;
 }
 .project__cards {
    display: flex;

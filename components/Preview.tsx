@@ -12,7 +12,7 @@ interface Assets {
 }
 
 const Preview: React.FC = () => {
-   const [data, setData] = useState<Assets>(customData[0])
+   const [data, setData] = useState<Assets>(customData)
    return (
       <article className={styles.preview}>
          <section className={styles.preview__content}>

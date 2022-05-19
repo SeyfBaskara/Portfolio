@@ -1,12 +1,16 @@
 import React, { useState, useRef } from 'react'
-import Image from 'next/image'
 import styles from '../styles/About.module.css'
-import circleIcon from '../public/icons/circle.png'
+import customData from '../data/data.json'
+
+interface Profile {
+   profile: Array<{ title: string; subtitle: string; description: string; date: string; id: string }>
+}
 
 const About: React.FC = () => {
-   const [selectedIndex, setSelectedIndex] = useState<number>(0)
+   const [data, setData] = useState<Profile>(customData)
+   const [selectedIndex, setSelectedIndex] = useState<number>(1)
    const [cellCount, setCellCount] = useState<number>(6)
-   const [angle, setAngle] = useState<number>(0)
+   const [angle, setAngle] = useState<number>()
    const elementRef = useRef<any>()
 
    const rotateCarousel = () => {
@@ -24,54 +28,16 @@ const About: React.FC = () => {
          <h1 className={styles.about__title}>Time Carousel</h1>
          <section className={styles.scene}>
             <div className={styles.cards} ref={elementRef}>
-               <div className={styles.card}>
-                  <h2 className={styles.card__title}>Bachelor of Electrical Engineering</h2>
-                  <p className={styles.card__subtitle}>University of Debreecen, Hungary </p>
-                  <p className={styles.card__description}>
-                     Graduated from faculty of Science Technology University of Debrecen. There could be more things here
-                  </p>
-                  <p className={styles.card__date}>2013 - 2018</p>
-               </div>
-               <div className={styles.card}>
-                  <h2 className={styles.card__title}>Bachelor of Electrical Engineering</h2>
-                  <p className={styles.card__subtitle}>University of Debreecen, Hungary </p>
-                  <p className={styles.card__description}>
-                     Graduated from faculty of Science Technology University of Debrecen. There could be more things here
-                  </p>
-                  <p className={styles.card__date}>2013 - 2018</p>
-               </div>
-               <div className={styles.card}>
-                  <h2 className={styles.card__title}>Bachelor of Electrical Engineering</h2>
-                  <p className={styles.card__subtitle}>University of Debreecen, Hungary </p>
-                  <p className={styles.card__description}>
-                     Graduated from faculty of Science Technology University of Debrecen. There could be more things here
-                  </p>
-                  <p className={styles.card__date}>2013 - 2018</p>
-               </div>
-               <div className={styles.card}>
-                  <h2 className={styles.card__title}>Bachelor of Electrical Engineering</h2>
-                  <p className={styles.card__subtitle}>University of Debreecen, Hungary </p>
-                  <p className={styles.card__description}>
-                     Graduated from faculty of Science Technology University of Debrecen. There could be more things here
-                  </p>
-                  <p className={styles.card__date}>2013 - 2018</p>
-               </div>
-               <div className={styles.card}>
-                  <h2 className={styles.card__title}>Bachelor of Electrical Engineering</h2>
-                  <p className={styles.card__subtitle}>University of Debreecen, Hungary </p>
-                  <p className={styles.card__description}>
-                     Graduated from faculty of Science Technology University of Debrecen. There could be more things here
-                  </p>
-                  <p className={styles.card__date}>2013 - 2018</p>
-               </div>
-               <div className={styles.card}>
-                  <h2 className={styles.card__title}>Bachelor of Electrical Engineering</h2>
-                  <p className={styles.card__subtitle}>University of Debreecen, Hungary </p>
-                  <p className={styles.card__description}>
-                     Graduated from faculty of Science Technology University of Debrecen. There could be more things here
-                  </p>
-                  <p className={styles.card__date}>2013 - 2018</p>
-               </div>
+               {data.profile.map((el) => {
+                  return (
+                     <div className={styles.card} key={el.id}>
+                        <h2 className={styles.card__title}>{el.title}</h2>
+                        <p className={styles.card__subtitle}>{el.subtitle} </p>
+                        <p className={styles.card__description}>{el.description}</p>
+                        <p className={styles.card__date}>{el.date}</p>
+                     </div>
+                  )
+               })}
             </div>
          </section>
          <section className={styles.about__bottom}>

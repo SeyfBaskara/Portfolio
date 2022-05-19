@@ -8,7 +8,7 @@ interface Assets {
 }
 
 const AboutWidget: React.FC = () => {
-   const [data, setData] = useState<Assets>(customData[0])
+   const [data, setData] = useState<Assets>(customData)
 
    return (
       <article className={styles.widget}>

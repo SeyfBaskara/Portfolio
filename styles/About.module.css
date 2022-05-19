@@ -6,8 +6,8 @@
 .about__title {
    text-align: center;
    margin-top: 3rem;
-   font-family: 'Playfair Display SC', serif;
-   color: hsla(24, 21%, 45%);
+   font-size: 1.5rem;
+   color: #737573;
 }
 
 .scene {
@@ -38,25 +38,28 @@
    border-radius: 5px;
    transition: transform 1s, opacity 1s;
    padding-left: 1rem;
+   color: #343a3a;
+   display: flex;
+   flex-direction: column;
 }
 
 .card:nth-child(6n + 1) {
-   background: hsla(163, 33%, 77%, 0.9);
+   background: rgb(199, 229, 217);
 }
 .card:nth-child(6n + 2) {
-   background: hsla(48, 6%, 69%, 0.9);
+   background: rgb(184, 197, 188);
 }
 .card:nth-child(6n + 3) {
-   background: hsla(23, 23%, 64%, 0.9);
+   background: rgb(184, 197, 188);
 }
 .card:nth-child(6n + 4) {
-   background: hsla(35, 12%, 53%, 0.9);
+   background: rgb(184, 197, 188);
 }
 .card:nth-child(6n + 5) {
-   background: hsla(24, 21%, 45%, 0.9);
+   background: rgb(184, 197, 188);
 }
 .card:nth-child(6n + 0) {
-   background: hsla(17, 15%, 32%, 0.9);
+   background: rgb(184, 197, 188);
 }
 
 .card:nth-child(1) {
@@ -79,19 +82,20 @@
 }
 
 .card__title {
-   font-size: 1.2rem;
-   font-family: 'Playfair Display SC', serif;
+   font-size: 1.1rem;
 }
 .card__subtitle {
-   font-size: 1rem;
+   font-size: 0.8rem;
    font-style: italic;
-   margin-top: -1rem;
+   margin-top: -0.8rem;
 }
 .card__description {
-   font-weight: 300;
+   font-size: 0.9rem;
+   padding-right: 0.3rem;
 }
 .card__date {
    position: absolute;
+   bottom: 0;
    font-size: 0.8rem;
    font-style: oblique;
 }
@@ -100,12 +104,14 @@
    text-align: center;
 }
 .turn__button {
-   background-color: hsla(24, 21%, 45%, 0.8);
    border: none;
    border-radius: 8px;
    cursor: pointer;
    font-size: 1.2rem;
    font-weight: 300;
    padding: 0.9rem 2rem;
-   font-family: 'Playfair Display SC', serif;
+   box-shadow: 1rem 1rem 2rem #d0d0d0;
+   background: rgba(166, 181, 171, 0.8);
+   color: #3e3f3e;
+   font-weight: 700;
 }

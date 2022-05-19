@@ -40,7 +40,7 @@ const Project: React.FC = () => {
 
                <ul className={styles.project__links}>
                   <li className={styles.project__link}>
-                     <a href="#" target="_blank" rel="noreferrer">
+                     <a href="https://github.com/SeyfBaskara/LinkedIn-clone" target="_blank" rel="noreferrer">
                         Live Demo
                      </a>
                   </li>

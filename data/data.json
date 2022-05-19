@@ -1,23 +1,65 @@
-[
-   {
-      "iconNames": [
-         "html",
-         "css",
-         "sass",
-         "javascript",
-         "typescript",
-         "react",
-         "redux",
-         "nextJs",
-         "nodeJs",
-         "express",
-         "mongoDB",
-         "docker",
-         "github"
-      ],
-      "logoNames": ["linkedin", "github", "gmail"],
-      "linkedinUrl": "https://www.linkedin.com/in/seyfettinbaskara/",
-      "githubUrl": "https://github.com/SeyfBaskara",
-      "gmailUrl": "#"
-   }
-]
+{
+   "iconNames": [
+      "html",
+      "css",
+      "sass",
+      "javascript",
+      "typescript",
+      "react",
+      "redux",
+      "nextJs",
+      "nodeJs",
+      "express",
+      "mongoDB",
+      "docker",
+      "github"
+   ],
+   "logoNames": ["linkedin", "github", "gmail"],
+   "linkedinUrl": "https://www.linkedin.com/in/seyfettinbaskara/",
+   "githubUrl": "https://github.com/SeyfBaskara",
+   "gmailUrl": "#",
+   "profile": [
+      {
+         "title": "Full-Stack Developer",
+         "subtitle": "School of Applied Technology </salt>",
+         "description": "Intensive three month training program for full stack web development with a focus on TDD, mob programming, and applied learning. ",
+         "date": "2022 - present",
+         "id": "1"
+      },
+      {
+         "title": "Bachelor of Electrical Engineering",
+         "subtitle": "University of Debreecen, Hungary",
+         "description": "Graduated from faculty of Science Technology University of Debrecen.",
+         "date": "2013 - 2018",
+         "id": "2"
+      },
+      {
+         "title": "Associate Degree in Electrical and Electronic",
+         "subtitle": "University of Dicle, Turkey",
+         "description": "Graduated from faculty of Enginnering in Electric and Energy",
+         "date": "2010 - 2012",
+         "id": "3"
+      },
+      {
+         "title": "Entrepreneur",
+         "subtitle": "NordicSoil AB",
+         "description": "Conducted a business plan, strategy, and research and develop machinery line for the production facility.",
+         "date": "2020 - 2021",
+         "id": "4"
+      },
+      {
+         "title": "Entrepreneur",
+         "subtitle": "Tav-Sun Ltd",
+         "description": "Collaborating with companies in research and development to determine relevant demands as well as consulting as a field engineer.",
+         "date": "2018 - 2019",
+         "id": "5"
+      },
+      {
+         "title": "Internship",
+         "subtitle": "University of Debrecen",
+         "description": "Development and implementation of PLC controlled fire extinguishing system by using PLC programming languages based on CodeSys standards",
+         "date": "2017",
+         "id": "6"
+      }
+   ]
+}

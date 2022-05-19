@@ -1,15 +1,13 @@
 import Link from 'next/link'
 import React from 'react'
-import styles from '../../styles/Header.module.css'
+import styles from '../../styles/Layout.module.css'
 
 const Header = (): JSX.Element => {
    return (
       <header className={styles.header}>
          <section className={styles.header__name}>
             <Link href="/">
-               <a>
-                  <h1>Seyfettin Baskara</h1>
-               </a>
+               <a>Seyfettin Baskara</a>
             </Link>
          </section>
          <section className={styles.header__links}>

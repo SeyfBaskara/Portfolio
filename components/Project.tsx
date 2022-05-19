@@ -10,10 +10,12 @@ const Project: React.FC = () => {
          <section className={styles.project__cards}>
             <div className={styles.project__card}>
                <Image src={linkedinIcon} alt="linkedin icon" width={150} height={150} />
-               <h2 className={styles.card__title}>LinkedIn Clone</h2>
+
+               <h3 className={styles.card__title}>LinkedIn Clone</h3>
                <p className={styles.card__description}>
-                  This is project build with react and redux at base. More focus on layout of linkedin ...
+                  This project built with React, Redux and Firestore. Mostly focus on layout of LinkedIn.
                </p>
+
                <ul className={styles.project__links}>
                   <li className={styles.project__link}>
                      <a href="#">Live Demo</a>
@@ -25,8 +27,12 @@ const Project: React.FC = () => {
             </div>
             <div className={styles.project__card}>
                <Image src={linkedinIcon} alt="linkedin icon" width={150} height={150} />
-               <h2>LinkedIn Clone project</h2>
-               <p>This is project build with react and redux at base. More focus on layout of linkedin ...</p>
+
+               <h3 className={styles.card__title}>GardenJS Project</h3>
+               <p className={styles.card__description}>
+                  This is team project built with React, Redux, Nodejs, ExpressJS, JWT and MangoDB.
+               </p>
+
                <ul className={styles.project__links}>
                   <li className={styles.project__link}>
                      <a href="#">Live Demo</a>

@@ -14,6 +14,10 @@
          "mongoDB",
          "docker",
          "github"
-      ]
+      ],
+      "logoNames": ["linkedin", "github", "gmail"],
+      "linkedinUrl": "https://www.linkedin.com/in/seyfettinbaskara/",
+      "githubUrl": "https://github.com/SeyfBaskara",
+      "gmailUrl": "#"
    }
 ]

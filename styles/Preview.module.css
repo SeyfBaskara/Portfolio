@@ -1,23 +1,36 @@
 .preview {
+   min-height: 70vh;
+}
+.preview__content {
    display: flex;
    justify-content: center;
    align-items: center;
-   min-height: 80vh;
+   margin-top: 7rem;
 }
 .preview__detail {
    max-width: 70%;
-   /* margin-top: 2rem; */
    padding-right: 2rem;
+   margin-top: -1.5rem;
 }
 .preview__title {
-   font-size: 3rem;
+   font-size: 2rem;
 }
-.preview__profile {
-   /* margin-top: 5rem; */
+.preview__description {
+   font-size: 1.1rem;
+   color: rgb(59, 58, 58);
+}
+.preview__span {
+   font-weight: 700;
+   margin-left: 0.3rem;
+}
+.profile_wrapper {
+   border-radius: 50%;
+   overflow: hidden;
 }
 .preview__links {
    display: flex;
    justify-content: center;
+   gap: 1rem;
    align-items: center;
    padding-top: 0.8rem;
 }

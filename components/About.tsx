@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import styles from '../styles/About.module.css'
 import customData from '../data/data.json'
 
@@ -12,6 +12,11 @@ const About: React.FC = () => {
    const [cellCount, setCellCount] = useState<number>(6)
    const [angle, setAngle] = useState<number>()
    const elementRef = useRef<any>()
+
+   useEffect(() => {
+      setSelectedIndex(selectedIndex + 1)
+      rotateCarousel()
+   }, [])
 
    const rotateCarousel = () => {
       setAngle((selectedIndex / cellCount) * -360)

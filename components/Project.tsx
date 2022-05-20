@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from '../styles/Projects.module.css'
 import Image from 'next/image'
 import customData from '../data/data.json'
@@ -17,6 +17,10 @@ interface Projects {
 const Project: React.FC = () => {
    const [data, setData] = useState<Projects>(customData)
 
+   useEffect(() => {
+      setData(customData)
+   }, [data])
+
    return (
       <article className={styles.project}>
          <h1 className={styles.project__title}>My Projects</h1>
@@ -24,7 +28,14 @@ const Project: React.FC = () => {
             {data.projects.map((project) => {
                return (
                   <div key={project.id} className={styles.project__card}>
-                     <Image src={`/images/${project.img}.png`} alt="linkedin icon" width={400} height={195} />
+                     <Image
+                        src={`/images/${project.img}.png`}
+                        priority={true}
+                        blurDataURL="blur"
+                        alt="image"
+                        width={400}
+                        height={195}
+                     />
                      <h3 className={styles.card__title}>{project.title}</h3>
                      <p className={styles.card__description}>{project.description}</p>
 

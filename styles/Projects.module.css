@@ -6,17 +6,19 @@
 }
 .project__cards {
    display: flex;
-   gap: 5rem;
+   flex-wrap: wrap;
+   justify-content: space-between;
    margin: 4rem 0;
+   row-gap: 4rem;
 }
 .project__card {
    border-radius: 1rem;
-   box-shadow: 2rem 2rem 4rem 0.5rem rgb(218, 214, 214);
+   box-shadow: 2rem 2rem 4rem 0.5rem rgb(172, 169, 169);
    text-align: center;
    padding: 1rem 2rem 0;
    height: 360px;
    width: 370px;
-   background-color: whitesmoke;
+   background-color: white;
 }
 .card__title {
    font-size: 1.3rem;

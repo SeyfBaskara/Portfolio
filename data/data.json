@@ -61,5 +61,32 @@
          "date": "2017",
          "id": "6"
       }
-   ]
+   ],
+   "projects": [
+      {
+         "title": "Garden JS ",
+         "description": "This is team project built with React, Redux, Sass, Node, Express, JWT and MangoDB.",
+         "githubUrl": "https://github.com/SeyfBaskara/garden-js",
+         "liveUrl": "https://gardenproject-client.herokuapp.com/",
+         "img": "gardenjs",
+         "id": "1"
+      },
+      {
+         "title": "LinkedIn Clone ",
+         "description": "This project built with React, Redux and Firestore. Mostly focus on layout of LinkedIn.",
+         "githubUrl": "https://github.com/SeyfBaskara/LinkedIn-clone",
+         "liveUrl": "https://github.com/SeyfBaskara/LinkedIn-clone",
+         "img": "bluebird",
+         "id": "2"
+      },
+      {
+         "title": "LinkedIn Clone ",
+         "description": "This project built with React, Redux and Firestore. Mostly focus on layout of LinkedIn.",
+         "githubUrl": "https://github.com/SeyfBaskara/LinkedIn-clone",
+         "liveUrl": "https://github.com/SeyfBaskara/LinkedIn-clone",
+         "img": "linkedinicon",
+         "id": "3"
+      }
+   ],
+   "projectImg": ["gardenjs", "bluebird", "linkedinicon"]
 }

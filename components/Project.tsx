@@ -33,8 +33,8 @@ const Project: React.FC = () => {
                         priority={true}
                         blurDataURL="blur"
                         alt="image"
-                        width={400}
-                        height={195}
+                        width={project.img === 'gardenjs' ? 400 : project.img === 'bluebird' ? 230 : 200}
+                        height={project.img === 'gardenjs' ? 195 : project.img === 'bluebird' ? 150 : 150}
                      />
                      <h3 className={styles.card__title}>{project.title}</h3>
                      <p className={styles.card__description}>{project.description}</p>

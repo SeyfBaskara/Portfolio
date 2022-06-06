@@ -31,7 +31,7 @@ const Preview: React.FC = () => {
             </section>
             <section className={styles.preview__profile}>
                <div className={styles.profile_wrapper}>
-                  <Image src={profile} alt="Profile" placeholder="blur" priority={true} width={250} height={250} />
+                  <Image src={profile} alt="Profile" placeholder="blur" layout="fill" priority={true} />
                </div>
                <div className={styles.preview__links}>
                   {data.logoNames.map((path) => {

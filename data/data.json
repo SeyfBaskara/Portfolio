@@ -86,7 +86,14 @@
          "liveUrl": "https://github.com/SeyfBaskara/LinkedIn-clone",
          "img": "linkedinicon",
          "id": "3"
+      },
+      {
+         "title": "Single Product Page ",
+         "description": "This is E-commerce single product page challenge from Frontend mentor. Build with NextJs, Typescript, Sass and deploy with Vercel.",
+         "githubUrl": "https://github.com/SeyfBaskara/Ecommerce-single-product-page",
+         "liveUrl": "https://ecommerce-single-product-page.vercel.app",
+         "img": "ecommerce",
+         "id": "4"
       }
-   ],
-   "projectImg": ["gardenjs", "bluebird", "linkedinicon"]
+   ]
 }

@@ -24,8 +24,11 @@
    margin-left: 0.3rem;
 }
 .profile_wrapper {
-   border-radius: 50%;
+   position: relative;
    overflow: hidden;
+   width: 250px;
+   height: 250px;
+   border-radius: 50%;
 }
 .preview__links {
    display: flex;

@@ -11,10 +11,10 @@ const Header = (): JSX.Element => {
             </Link>
          </section>
          <section className={styles.header__links}>
-            <Link href="/about">
+            <Link href="#about">
                <a>About</a>
             </Link>
-            <Link href="projects">
+            <Link href="#projects">
                <a>Projects</a>
             </Link>
          </section>

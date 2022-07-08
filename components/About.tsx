@@ -29,7 +29,7 @@ const About: React.FC = () => {
    }
 
    return (
-      <article className={styles.about}>
+      <article id="about" className={styles.about}>
          <h1 className={styles.about__title}>Time Carousel</h1>
          <section className={styles.scene}>
             <div className={styles.cards} ref={elementRef}>

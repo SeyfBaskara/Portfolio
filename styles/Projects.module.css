@@ -1,3 +1,6 @@
+.project {
+   margin: 6rem 0;
+}
 .project__title {
    text-align: center;
    margin: 4rem 0;
@@ -7,18 +10,47 @@
 .project__cards {
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-between;
-   margin: 4rem 0;
+   margin-top: 6rem;
+   gap: 1.2rem;
    row-gap: 4rem;
+   list-style: none;
+   padding: 0;
+}
+
+.project__card,
+.card__text {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 .project__card {
    border-radius: 1rem;
    box-shadow: 2rem 2rem 4rem 0.5rem rgb(172, 169, 169);
-   text-align: center;
-   padding: 1rem 2rem 0;
-   height: 380px;
-   width: 370px;
+   padding: 1rem 1rem 0;
+   width: 260px;
+   height: 370px;
    background-color: white;
+}
+.card__text {
+   flex-grow: 1;
+}
+
+.card__text > * + * {
+   margin-top: 0.75rem;
+}
+
+.card__text:last-child {
+   margin-top: auto;
+}
+
+.card__text:nth-last-child(1) {
+   margin-bottom: 0.75rem;
+}
+
+.card__img {
+   position: relative;
+   width: 200px;
+   height: 130px;
 }
 .card__title {
    font-size: 1.3rem;
@@ -26,22 +58,19 @@
 .card__description {
    font-size: 1rem;
    color: rgb(94, 90, 90);
-   margin-top: -1rem;
+   text-align: center;
 }
 .project__links {
    display: flex;
    justify-content: space-around;
-   justify-items: center;
-   margin-right: 2rem;
+   width: 100%;
 }
 
 .project__link {
-   list-style: none;
-   padding: 0.7rem;
    border: 2px solid rgb(218, 214, 214);
    border-radius: 5px;
+   padding: 0.5rem;
 }
 .project__link:hover {
-   background-color: hsla(210, 10%, 84%, 0.5);
-   transform: translateY(-3px) scale(1.01) translateZ(0);
+   box-shadow: 0 0 0 0.125rem;
 }

@@ -3,10 +3,12 @@
       "html",
       "css",
       "sass",
+      "tailwind",
       "javascript",
       "typescript",
       "react",
       "redux",
+      "react-native",
       "nextJs",
       "nodeJs",
       "express",
@@ -94,6 +96,14 @@
          "liveUrl": "https://ecommerce-single-product-page.vercel.app",
          "img": "ecommerce",
          "id": "4"
+      },
+      {
+         "title": "Easybank Page",
+         "description": "This is easybank landing page challenge from Frontend mentor. Build with NextJs, Typescript, Sass and deploy with Vercel.",
+         "githubUrl": "https://github.com/SeyfBaskara/easybank-landing-page",
+         "liveUrl": "https://easybank-landing-page-ebon-sigma.vercel.app",
+         "img": "easybank",
+         "id": "5"
       }
    ]
 }

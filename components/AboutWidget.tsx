@@ -17,7 +17,7 @@ const AboutWidget: React.FC = () => {
             {data.iconNames.map((path) => {
                return (
                   <div key={path} className={styles.card}>
-                     <Image src={`/icons/tools/${path}.png`} priority={true} alt="icons" height={60} width={60} />
+                     <Image src={`/icons/tools/${path}.svg`} priority={true} alt="icons" height={60} width={60} />
                      <p>{path.charAt(0).toUpperCase() + path.slice(1)}</p>
                   </div>
                )

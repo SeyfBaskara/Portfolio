@@ -24,8 +24,8 @@ const Preview: React.FC = () => {
                      <span className={styles.preview__span}>School of Applied Technology &lt;/ Salt&gt;</span>
                   </p>
                   <p>
-                     Currently focusing on developing Frontend projects with React, Redux and its frameworks. New to Next.js,
-                     Typscript and React Native.
+                     Currently focusing on developing Frontend projects with React, Redux, Next.js, Typscript and its frameworks.
+                     New to React Native.
                   </p>
                </div>
             </section>

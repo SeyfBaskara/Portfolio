@@ -22,39 +22,32 @@ const Project: React.FC = () => {
    }, [data])
 
    return (
-      <article className={styles.project}>
+      <article id="projects" className={styles.project}>
          <h1 className={styles.project__title}>My Projects</h1>
-         <section className={styles.project__cards}>
+         <ul className={styles.project__cards}>
             {data.projects.map((project) => {
                return (
-                  <div key={project.id} className={styles.project__card}>
-                     <Image
-                        src={`/images/${project.img}.png`}
-                        priority={true}
-                        blurDataURL="blur"
-                        alt="image"
-                        width={project.img === 'gardenjs' ? 400 : project.img === 'bluebird' ? 230 : 200}
-                        height={project.img === 'gardenjs' ? 195 : project.img === 'bluebird' ? 150 : 150}
-                     />
-                     <h3 className={styles.card__title}>{project.title}</h3>
-                     <p className={styles.card__description}>{project.description}</p>
+                  <li key={project.id} className={styles.project__card}>
+                     <div className={styles.card__img}>
+                        <Image src={`/images/${project.img}.png`} priority={true} blurDataURL="blur" alt="image" layout="fill" />
+                     </div>
+                     <div className={styles.card__text}>
+                        <h3 className={styles.card__title}>{project.title}</h3>
+                        <p className={styles.card__description}>{project.description}</p>
 
-                     <ul className={styles.project__links}>
-                        <li className={styles.project__link}>
-                           <a href={project.liveUrl} target="_blank" rel="noreferrer">
+                        <div className={styles.project__links}>
+                           <a href={project.liveUrl} target="_blank" rel="noreferrer" className={styles.project__link}>
                               Live Demo
                            </a>
-                        </li>
-                        <li className={styles.project__link}>
-                           <a href={project.githubUrl} target="_blank" rel="noreferrer">
+                           <a href={project.githubUrl} target="_blank" rel="noreferrer" className={styles.project__link}>
                               Github Link
                            </a>
-                        </li>
-                     </ul>
-                  </div>
+                        </div>
+                     </div>
+                  </li>
                )
             })}
-         </section>
+         </ul>
       </article>
    )
 }

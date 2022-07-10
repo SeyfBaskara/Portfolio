@@ -1,13 +1,14 @@
 .about {
-   min-height: 80vh;
    display: flex;
    flex-direction: column;
+   justify-content: center;
 }
 .about__title {
    text-align: center;
-   margin-top: 1rem;
-   font-size: 1.5rem;
+   font-size: 2rem;
    color: #737573;
+   margin-top: 10rem;
+   margin-bottom: 3rem;
 }
 
 .scene {
@@ -27,6 +28,7 @@
    transform: translateZ(-288px);
    transform-style: preserve-3d;
    transition: transform 1s;
+   margin: auto;
 }
 
 .card {
@@ -114,4 +116,23 @@
    background: rgba(166, 181, 171, 0.8);
    color: #3e3f3e;
    font-weight: 700;
+   margin-bottom: 5rem;
+}
+
+@media only screen and (min-width: 480px) {
+   .scene {
+      perspective: 1000px;
+   }
+}
+@media only screen and (min-width: 768px) {
+   .about__container {
+      width: 80%;
+      margin: 0 auto;
+   }
+}
+
+@media only screen and (min-width: 992px) {
+   .about__container {
+      width: 65%;
+   }
 }

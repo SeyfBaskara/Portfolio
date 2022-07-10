@@ -29,27 +29,29 @@ const About: React.FC = () => {
    }
 
    return (
-      <article id="about" className={styles.about}>
-         <h1 className={styles.about__title}>Time Carousel</h1>
-         <section className={styles.scene}>
-            <div className={styles.cards} ref={elementRef}>
-               {data.profile.map((el) => {
-                  return (
-                     <div className={styles.card} key={el.id}>
-                        <h2 className={styles.card__title}>{el.title}</h2>
-                        <p className={styles.card__subtitle}>{el.subtitle} </p>
-                        <p className={styles.card__description}>{el.description}</p>
-                        <p className={styles.card__date}>{el.date}</p>
-                     </div>
-                  )
-               })}
-            </div>
-         </section>
-         <section className={styles.about__bottom}>
-            <button className={styles.turn__button} onClick={handleTurn}>
-               View Next
-            </button>
-         </section>
+      <article id="about" className={styles.about__container}>
+         <div className={styles.about}>
+            <h1 className={styles.about__title}>Time Carousel</h1>
+            <section className={styles.scene}>
+               <div className={styles.cards} ref={elementRef}>
+                  {data.profile.map((el) => {
+                     return (
+                        <div className={styles.card} key={el.id}>
+                           <h2 className={styles.card__title}>{el.title}</h2>
+                           <p className={styles.card__subtitle}>{el.subtitle} </p>
+                           <p className={styles.card__description}>{el.description}</p>
+                           <p className={styles.card__date}>{el.date}</p>
+                        </div>
+                     )
+                  })}
+               </div>
+            </section>
+            <section className={styles.about__bottom}>
+               <button className={styles.turn__button} onClick={handleTurn}>
+                  View Next
+               </button>
+            </section>
+         </div>
       </article>
    )
 }

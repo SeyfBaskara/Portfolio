@@ -19,6 +19,7 @@
    margin: 2.5rem auto;
    perspective: 1000px;
    border-radius: 5px;
+   overflow: hidden;
 }
 
 .cards {
@@ -28,7 +29,6 @@
    transform: translateZ(-288px);
    transform-style: preserve-3d;
    transition: transform 1s;
-   margin: auto;
 }
 
 .card {
@@ -121,7 +121,7 @@
 
 @media only screen and (min-width: 480px) {
    .scene {
-      perspective: 1000px;
+      overflow: visible;
    }
 }
 @media only screen and (min-width: 768px) {

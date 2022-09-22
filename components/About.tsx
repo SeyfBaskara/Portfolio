@@ -12,7 +12,6 @@ const About: React.FC = () => {
    const [cellCount, setCellCount] = useState<number>(6)
    const [angle, setAngle] = useState<number>()
    const elementRef = useRef<any>()
-   const [files, setFiles] = useState<any>(null)
 
    useEffect(() => {
       setSelectedIndex(selectedIndex + 1)
@@ -27,19 +26,6 @@ const About: React.FC = () => {
    const handleTurn = () => {
       setSelectedIndex(selectedIndex + 1)
       rotateCarousel()
-   }
-
-   const handleOnChange = (e: any) => {
-      e.preventDefault()
-      if (e.target.files && e.target.files[0]) {
-         setFiles(e.target.files)
-      }
-   }
-
-   const handleSubmit = (e: any) => {
-      e.preventDefault()
-      const url = URL.createObjectURL(files[0])
-      console.log(url)
    }
 
    return (
@@ -64,11 +50,6 @@ const About: React.FC = () => {
                <button className={styles.turn__button} onClick={handleTurn}>
                   View Next
                </button>
-
-               <form onSubmit={handleSubmit}>
-                  <input type="file" onChange={handleOnChange} />
-                  <input type="submit" />
-               </form>
             </section>
          </div>
       </article>

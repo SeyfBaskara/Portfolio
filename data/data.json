@@ -104,6 +104,14 @@
          "liveUrl": "https://easybank-landing-page-ebon-sigma.vercel.app",
          "img": "easybank",
          "id": "5"
+      },
+      {
+         "title": "Task Management",
+         "description": "Challenge from Frontend mentor. Build with NextJs, Redux, Typescript, TailwindCss, Nodejs, Express, MongoDB, Mongoose and deploy with Vercel and Heroku.",
+         "githubUrl": "https://github.com/SeyfBaskara/kanban-task-management",
+         "liveUrl": "https://kanban-task-management-1l212qpl5-seyfbaskara.vercel.app",
+         "img": "kanbantask",
+         "id": "6"
       }
    ]
 }

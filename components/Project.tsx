@@ -43,10 +43,20 @@ const Project: React.FC = () => {
                            <p className={styles.card__description}>{project.description}</p>
 
                            <div className={styles.project__links}>
-                              <a href={project.liveUrl} target="_blank" rel="noreferrer" className={styles.project__link}>
+                              <a
+                                 href={project.liveUrl}
+                                 target="_blank"
+                                 rel="noreferrer"
+                                 className={styles.project__link}
+                              >
                                  Live Demo
                               </a>
-                              <a href={project.githubUrl} target="_blank" rel="noreferrer" className={styles.project__link}>
+                              <a
+                                 href={project.githubUrl}
+                                 target="_blank"
+                                 rel="noreferrer"
+                                 className={styles.project__link}
+                              >
                                  Github Link
                               </a>
                            </div>

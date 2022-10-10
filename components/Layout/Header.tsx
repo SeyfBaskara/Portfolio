@@ -13,7 +13,7 @@ const Header = (): JSX.Element => {
             </section>
             <section className={styles.header__links}>
                <Link href="#about">
-                  <a>About</a>
+                  <a>Cv</a>
                </Link>
                <Link href="#projects">
                   <a>Projects</a>

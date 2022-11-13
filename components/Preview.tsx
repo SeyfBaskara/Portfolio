@@ -24,8 +24,8 @@ const Preview: React.FC = () => {
                      <span className={styles.preview__span}>School of Applied Technology &lt;/ Salt&gt;</span>
                   </p>
                   <p>
-                     Currently focusing on developing Frontend projects with React, Redux, Next.js, Typscript and its frameworks.
-                     New to React Native.
+                     Currently focusing on developing Frontend projects with React, Redux, Next.js, Typscript and its
+                     frameworks.
                   </p>
                </div>
             </section>
@@ -38,7 +38,13 @@ const Preview: React.FC = () => {
                      return (
                         <a
                            key={path}
-                           href={path === 'linkedin' ? data.linkedinUrl : path === 'github' ? data.githubUrl : data.gmailUrl}
+                           href={
+                              path === 'linkedin'
+                                 ? data.linkedinUrl
+                                 : path === 'github'
+                                 ? data.githubUrl
+                                 : data.gmailUrl
+                           }
                            target="_blank"
                            rel="noreferrer"
                         >

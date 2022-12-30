@@ -17,7 +17,11 @@ module.exports = {
       },
       extend: {
          colors: {
-            white: '#FFFFFF',
+            Black: '#151515',
+            Dark_Black: '#242424',
+            White: '#FFFFFF',
+            Grey: '#d9d9d9',
+            Green: '#4EE1A0',
          },
       },
    },

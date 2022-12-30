@@ -113,5 +113,10 @@
          "img": "kanbantask",
          "id": "6"
       }
-   ]
+   ],
+   "metaData": {
+      "title": "Seyfettin Baskara",
+      "description": "Full-stack software developer with experience  mainly in Javascript, TypeScript, GoLang, React, NextJs, NodeJS. Skilled in delivering high-quality software solutions on time. Passionate about solving complex problems and creating innovative solutions.",
+      "keywords": "Software developer, FullStack developer, Front-end development, Back-end development, Web development, Mobile development, Javascript, TypeScript, GoLang, React, NextJs, NodeJS"
+   }
 }

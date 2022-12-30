@@ -1,8 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+   font-family: 'SpaceGrotesk';
+   src: url('../public/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('ttf');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'SpaceGrotesk';
+   src: url('../public/fonts/SpaceGrotesk-Bold.ttf') format('ttf');
+   font-weight: bold;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'SpaceGrotesk';
+   src: url('../public/fonts/SpaceGrotesk-Medium.ttf') format('ttf');
+   font-weight: medium;
+   font-style: normal;
+}
 
 *,
 *::before,
@@ -23,7 +40,7 @@ body,
 body {
    line-height: 1.5;
    -webkit-font-smoothing: antialiased;
-   font-family: 'Kumbh Sans', sans-serif;
+   font-family: 'SpaceGrotesk';
    background-color: black;
 }
 

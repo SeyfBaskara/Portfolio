@@ -5,7 +5,7 @@ import data from '../data/data.json'
 const Home: NextPage = () => {
    return (
       <Layout metaData={data.metaData}>
-         <p>this is new portfolio</p>
+         <p className="">this is new portfolio</p>
       </Layout>
    )
 }

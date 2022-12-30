@@ -10,10 +10,10 @@ module.exports = {
       },
       fontSize: {
          sm: '0.9rem',
-         base: '1rem',
+         base: '1.125rem',
          md: '1.5rem',
-         large: '2rem',
-         xl: '2.5rem',
+         large: '3rem',
+         xl: '5.5rem',
       },
       extend: {
          colors: {

@@ -14,9 +14,11 @@ const Layout = ({ children, metaData }: any): JSX.Element => {
             <title>{title}</title>
          </Head>
 
-         <Header />
-         <main className="text-White">{children}</main>
-         <Footer />
+         <div className="p-4">
+            <Header />
+            <main className="text-White">{children}</main>
+            <Footer />
+         </div>
       </>
    )
 }

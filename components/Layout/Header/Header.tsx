@@ -1,5 +1,6 @@
 import React from 'react'
 import ContactMe from '../../Buttons/ContactMe'
+import ProfilePhoto from '../../ProfilePhoto'
 
 const Header = () => {
    return (
@@ -7,7 +8,7 @@ const Header = () => {
          <h1 className="font-bold text-md">SeyfettinBaskara</h1>
          <section className="flex flex-col text-center">
             <div>
-               <p>image comes here</p>
+               <ProfilePhoto />
             </div>
             <div className="flex flex-col gap-5">
                <h2 className="text-[2rem] font-bold">

@@ -16,10 +16,20 @@
       "docker",
       "github"
    ],
-   "logoNames": ["linkedin", "github", "gmail"],
-   "linkedinUrl": "https://www.linkedin.com/in/seyfettinbaskara/",
-   "githubUrl": "https://github.com/SeyfBaskara",
-   "gmailUrl": "mailto:seyfettin.baskara@appliedtechnology.se",
+   "links": [
+      {
+         "name": "icon-github",
+         "url": "https://github.com/SeyfBaskara"
+      },
+      {
+         "name": "icon-linkedin",
+         "url": "https://www.linkedin.com/in/seyfettinbaskara/"
+      },
+      {
+         "name": "icons8-gmail-logo",
+         "url": "mailto:seyfettin.baskara@gmail.com"
+      }
+   ],
    "profile": [
       {
          "title": "Full-Stack Developer",

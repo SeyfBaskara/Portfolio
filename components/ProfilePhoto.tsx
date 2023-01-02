@@ -5,7 +5,7 @@ import data from '../data/data.json'
 const ProfilePhoto = () => {
    return (
       <div>
-         <div>
+         <div className="bg-zinc-800">
             {data.links.map((link, index) => {
                return (
                   <a key={index} href={link.url} target="_blank" rel="noreferrer">
@@ -14,8 +14,8 @@ const ProfilePhoto = () => {
                )
             })}
          </div>
-         <div>
-            <p>profile picture</p>
+         <div className="">
+            <Image src="/images/profile.jpg" alt="profile picture" width={250} height={250} priority={true} />
          </div>
       </div>
    )

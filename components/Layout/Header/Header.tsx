@@ -2,15 +2,14 @@ import React from 'react'
 import Image from 'next/image'
 import ContactMe from '../../Buttons/ContactMe'
 import ProfilePhoto from '../../ProfilePhoto'
+import Nav from './Nav'
 
 const Header = () => {
    return (
       <header className="flex flex-col items-center text-White gap-5 relative overflow-hidden">
-         <h1 className="font-bold text-md">SeyfettinBaskara</h1>
+         <Nav />
          <section className="flex flex-col items-center gap-10 ">
-            <div>
-               <ProfilePhoto />
-            </div>
+            <ProfilePhoto />
             <div className="flex flex-col items-center text-center gap-5">
                <h2 className="text-[2rem] font-bold">
                   I&apos;m <span className="border-b-4 border-Green">Seyfettin Baskara.</span>

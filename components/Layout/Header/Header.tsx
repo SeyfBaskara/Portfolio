@@ -1,24 +1,33 @@
 import React from 'react'
+import Image from 'next/image'
 import ContactMe from '../../Buttons/ContactMe'
 import ProfilePhoto from '../../ProfilePhoto'
 
 const Header = () => {
    return (
-      <header className="text-White flex flex-col text-center">
+      <header className="flex flex-col items-center text-White gap-5 relative overflow-hidden">
          <h1 className="font-bold text-md">SeyfettinBaskara</h1>
-         <section className="flex flex-col text-center">
+         <section className="flex flex-col items-center gap-10 ">
             <div>
                <ProfilePhoto />
             </div>
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col items-center text-center gap-5">
                <h2 className="text-[2rem] font-bold">
                   I&apos;m <span className="border-b-4 border-Green">Seyfettin Baskara.</span>
                </h2>
-               <p className="text-base">
+               <p className="text-base px-4">
                   Based in the Sweden, I’m a full-stack developer passionate about building accessible web apps that
                   users love.
                </p>
                <ContactMe />
+            </div>
+         </section>
+         <section>
+            <div className="absolute top-52 -right-16 ">
+               <Image src="/images/pattern-circle.svg" alt="pattern circle" width={129} height={129} />
+            </div>
+            <div className="absolute top-28 -left-[25rem]">
+               <Image src="/images/pattern-rings.svg" alt="pattern circle" width={530} height={129} />
             </div>
          </section>
       </header>

@@ -3,7 +3,16 @@ import Head from 'next/head'
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
 
-const Layout = ({ children, metaData }: any): JSX.Element => {
+interface IProps {
+   children: any
+   metaData: {
+      title: string
+      description: string
+      keywords: string
+   }
+}
+
+const Layout: React.FC<IProps> = ({ children, metaData }) => {
    const { title, description, keywords } = metaData
    return (
       <>

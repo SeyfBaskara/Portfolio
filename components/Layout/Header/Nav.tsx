@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import data from '../../../data/data.json'
 
-const Nav = () => {
+const Nav = (): JSX.Element => {
    return (
       <div className="flex flex-col items-center gap-4 z-50">
          <h1 className="font-bold text-md">SeyfettinBaskara</h1>

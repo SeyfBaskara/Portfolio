@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 const ProfilePhoto = () => {
    return (
-      <div>
-         <Image src="/images/profile.jpg" alt="profile picture" width={200} height={250} priority={true} />
+      <div className="relative bottom-12">
+         <Image src="/images/profile-IMG.jpg" alt="profile picture" width={302} height={400} priority={true} />
       </div>
    )
 }

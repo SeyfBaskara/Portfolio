@@ -6,9 +6,9 @@ import Nav from './Nav'
 
 const Header = () => {
    return (
-      <header className="flex flex-col items-center text-White gap-5 relative overflow-hidden">
+      <header className="flex flex-col items-center text-White relative overflow-hidden pt-5">
          <Nav />
-         <section className="flex flex-col items-center gap-10 ">
+         <section className="flex flex-col items-center">
             <ProfilePhoto />
             <div className="flex flex-col items-center text-center gap-5">
                <h2 className="text-[2rem] font-bold">
@@ -22,10 +22,10 @@ const Header = () => {
             </div>
          </section>
          <section>
-            <div className="absolute top-52 -right-16 ">
+            <div className="absolute top-[21rem] -right-16 ">
                <Image src="/images/pattern-circle.svg" alt="pattern circle" width={129} height={129} />
             </div>
-            <div className="absolute top-28 -left-[25rem]">
+            <div className="absolute top-32 -left-[25rem]">
                <Image src="/images/pattern-rings.svg" alt="pattern circle" width={530} height={129} />
             </div>
          </section>

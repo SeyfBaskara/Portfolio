@@ -10,7 +10,7 @@ const Nav = () => {
             {data.links.map((link, index) => {
                return (
                   <a key={index} href={link.url} target="_blank" rel="noreferrer">
-                     <Image src={`/icons/${link.name}.svg`} alt="icons" width={25} height={25} />
+                     <Image src={`/icons/${link.name}.svg`} alt={link.name} width={link.width} height={link.height} />
                   </a>
                )
             })}

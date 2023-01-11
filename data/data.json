@@ -19,15 +19,21 @@
    "links": [
       {
          "name": "icon-github",
-         "url": "https://github.com/SeyfBaskara"
+         "url": "https://github.com/SeyfBaskara",
+         "width": 25,
+         "height": 25
       },
       {
          "name": "icon-linkedin",
-         "url": "https://www.linkedin.com/in/seyfettinbaskara/"
+         "url": "https://www.linkedin.com/in/seyfettinbaskara/",
+         "width": 25,
+         "height": 25
       },
       {
          "name": "icons8-gmail-logo",
-         "url": "mailto:seyfettin.baskara@gmail.com"
+         "url": "mailto:seyfettin.baskara@gmail.com",
+         "width": 30,
+         "height": 30
       }
    ],
    "profile": [

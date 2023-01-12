@@ -22,7 +22,7 @@ const SendMessageForm = () => {
    }
 
    return (
-      <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-8 border-b border-Grey py-16">
+      <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-8 py-16 lg:basis-1/2">
          <label htmlFor="name" className={`${style.label}`}>
             <span className={`${style.span}`}>NAME</span>
             <input
@@ -51,7 +51,12 @@ const SendMessageForm = () => {
 
          <label htmlFor="message" className={`${style.label}`}>
             <span className={`${style.span}`}>MESSAGE</span>
-            <textarea className={`${style.input}`} autoComplete="off" {...register('message', { required: true })} />
+            <textarea
+               className={`${style.input}`}
+               rows={4}
+               autoComplete="off"
+               {...register('message', { required: true })}
+            />
          </label>
 
          <div className="flex justify-end">

@@ -1,4 +1,4 @@
-import Nav from './Nav'
+import Nav from '../Nav'
 import ProfilePhoto from '../../ProfilePhoto'
 import ContactMe from '../../Buttons/ContactMe'
 import PaternCircle from '../../PaternCircle'

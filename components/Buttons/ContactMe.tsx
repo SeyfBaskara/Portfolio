@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactMe = (): JSX.Element => {
    const handleContactMe = () => {
-      console.log('contact me')
+      document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
    }
    return (
       <div>

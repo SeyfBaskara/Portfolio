@@ -6,10 +6,10 @@ import PaternCircle from '../../PaternCircle'
 const Header = (): JSX.Element => {
    return (
       <header className="flex flex-col items-center text-White relative overflow-hidden pt-5">
-         <Nav />
+         <h1 className="font-bold text-md mb-2">SeyfettinBaskara</h1>
          <section className="flex flex-col items-center">
             <ProfilePhoto />
-            <div className="flex flex-col items-center text-center gap-5">
+            <article className="flex flex-col items-center text-center gap-5">
                <h2 className="text-[2rem] font-bold">
                   I&apos;m <span className="border-b-4 border-Green">Seyfettin Baskara.</span>
                </h2>
@@ -18,7 +18,7 @@ const Header = (): JSX.Element => {
                   users love.
                </p>
                <ContactMe />
-            </div>
+            </article>
          </section>
          <PaternCircle header={true} />
       </header>

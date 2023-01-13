@@ -9,6 +9,7 @@ interface IProps {
 const style = {
    header: 'absolute top-32 -left-[25rem] sm:top-16 sm:-left-[20rem] md:top-24 md:-left-48',
    footer: 'absolute bottom-60 -left-[21rem] sm:bottom-28 lg:-left-48 lg:bottom-32',
+   techStack: 'absolute -bottom-0 -right-80 md:bottom-10 md:-right-72 lg:-right-60',
 }
 
 const PaternCircle: React.FC<IProps> = ({ header, footer }) => {
@@ -19,7 +20,7 @@ const PaternCircle: React.FC<IProps> = ({ header, footer }) => {
                <Image src="/images/pattern-circle.svg" alt="pattern circle" width={129} height={129} />
             </div>
          )}
-         <div className={`${header ? style.header : style.footer}`}>
+         <div className={`${header ? style.header : footer ? style.footer : style.techStack}`}>
             <Image src="/images/pattern-rings.svg" alt="pattern circle" width={530} height={129} />
          </div>
       </section>

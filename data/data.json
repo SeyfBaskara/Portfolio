@@ -16,6 +16,32 @@
       "docker",
       "github"
    ],
+   "tools": [
+      "HTML",
+      "CSS",
+      "SASS",
+      "Tailwind",
+      "Javascript",
+      "Typescript",
+      "React",
+      "Redux",
+      "NextJs",
+      "NodeJs",
+      "GoLang",
+      "Express",
+      "REST",
+      "GraphQL",
+      "MongoDB",
+      "PostgreSQL",
+      "Mocha",
+      "Jest",
+      "Docker",
+      "Github",
+      "Netlify",
+      "Heroku",
+      "Vercel",
+      "Contentful"
+   ],
    "links": [
       {
          "name": "icon-github",

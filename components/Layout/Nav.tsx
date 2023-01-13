@@ -16,15 +16,17 @@ const Nav: React.FC<IProps> = ({ header, footer }) => {
    return (
       <div className={`${header ? style.header : style.footer}`}>
          {!header && <h1 className="font-bold text-md">SeyfettinBaskara</h1>}
-         <div className="flex items-center justify-around w-36 z-50">
+         <ul className="flex items-center justify-around w-36 z-50">
             {data.links.map((link, index) => {
                return (
-                  <a key={index} href={link.url} target="_blank" rel="noreferrer">
-                     <SvgLinks icon={link.icon} />
-                  </a>
+                  <li key={index}>
+                     <a href={link.url} target="_blank" rel="noreferrer">
+                        <SvgLinks icon={link.icon} />
+                     </a>
+                  </li>
                )
             })}
-         </div>
+         </ul>
       </div>
    )
 }

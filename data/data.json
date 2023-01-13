@@ -133,6 +133,18 @@
          "description": "This is team project built with React, Redux, Sass, Node, Express, JWT and MangoDB.",
          "githubUrl": "https://github.com/SeyfBaskara/garden-js",
          "liveUrl": "https://gardenproject-client.herokuapp.com/",
+         "techStack": [
+            "Javascript",
+            "React",
+            "Redux",
+            "Sass",
+            "NodeJs",
+            "Express",
+            "JWT",
+            "MongoDB",
+            "Mongoose",
+            "heroku"
+         ],
          "img": "gardenjs",
          "id": "1"
       },
@@ -141,22 +153,16 @@
          "description": "This is 5 days of hackday MERN project. You can create a digital post card to save in database.",
          "githubUrl": "https://github.com/SeyfBaskara/MERN_Postcard_project",
          "liveUrl": "https://github.com/SeyfBaskara/MERN_Postcard_project",
+         "techStack": ["Javascript", "React", "Redux", "Css", "NodeJs", "Express", "MongoDB", "Mongoose"],
          "img": "bluebird",
          "id": "2"
-      },
-      {
-         "title": "LinkedIn Clone ",
-         "description": "This project built with React, Redux and Firestore. Mostly focus on layout of LinkedIn.",
-         "githubUrl": "https://github.com/SeyfBaskara/LinkedIn-clone",
-         "liveUrl": "https://github.com/SeyfBaskara/LinkedIn-clone",
-         "img": "linkedinicon",
-         "id": "3"
       },
       {
          "title": "Single Product Page ",
          "description": "This is E-commerce single product page challenge from Frontend mentor. Build with NextJs, Typescript, Sass and deploy with Vercel.",
          "githubUrl": "https://github.com/SeyfBaskara/Ecommerce-single-product-page",
          "liveUrl": "https://ecommerce-single-product-page.vercel.app",
+         "techStack": ["Typescript", "NextJS", "Sass", "Vercel"],
          "img": "ecommerce",
          "id": "4"
       },
@@ -165,6 +171,7 @@
          "description": "This is easybank landing page challenge from Frontend mentor. Build with NextJs, Typescript, Sass and deploy with Vercel.",
          "githubUrl": "https://github.com/SeyfBaskara/easybank-landing-page",
          "liveUrl": "https://easybank-landing-page-ebon-sigma.vercel.app",
+         "techStack": ["Typescript", "NextJS", "Sass", "Vercel"],
          "img": "easybank",
          "id": "5"
       },
@@ -173,8 +180,28 @@
          "description": "Challenge from Frontend mentor. Build with NextJs, Redux, Typescript, TailwindCss, Nodejs, Express, MongoDB, Mongoose and deploy with Vercel and Heroku.",
          "githubUrl": "https://github.com/SeyfBaskara/kanban-task-management",
          "liveUrl": "https://kanban-task-management-1l212qpl5-seyfbaskara.vercel.app",
+         "techStack": [
+            "Typescript",
+            "NextJS",
+            "TailwindCss",
+            "NodeJS",
+            "Express",
+            "MongoDB",
+            "Moongose",
+            "heroku",
+            "Vercel"
+         ],
          "img": "kanbantask",
          "id": "6"
+      },
+      {
+         "title": "Audiophile Store",
+         "description": "This is frontend mentor e-commerce project build with nextJS, tailwindcs and use headless CMS as contentful. Design provided by frontend mentor platform.",
+         "githubUrl": "https://github.com/SeyfBaskara/audiophile-store",
+         "liveUrl": "https://audiophile-store-chi.vercel.app/home",
+         "techStack": ["Javascript", "NextJS", "TailwindCss", "Contentful", "Vercel"],
+         "img": "audiophile",
+         "id": "7"
       }
    ],
    "metaData": {

@@ -1,6 +1,6 @@
 import React from 'react'
-import Image from 'next/image'
 import data from '../../data/data.json'
+import SvgLinks from '../Links/SvgLinks'
 
 interface IProps {
    header?: boolean
@@ -20,7 +20,7 @@ const Nav: React.FC<IProps> = ({ header, footer }) => {
             {data.links.map((link, index) => {
                return (
                   <a key={index} href={link.url} target="_blank" rel="noreferrer">
-                     <Image src={`/icons/${link.name}.svg`} alt={link.name} width={link.width} height={link.height} />
+                     <SvgLinks icon={link.icon} />
                   </a>
                )
             })}

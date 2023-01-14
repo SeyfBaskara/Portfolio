@@ -1,7 +1,7 @@
-import React from 'react'
 import ContactMe from '../Buttons/ContactMe'
 import data from '../../data/data.json'
 import CustomImage from '../Image/CustomImage'
+import ProjectTechStack from './ProjectTechStack'
 import ViewButtons from '../Buttons/ViewButtons'
 
 const Projects = (): JSX.Element => {
@@ -19,16 +19,7 @@ const Projects = (): JSX.Element => {
                      <li key={index} className="flex flex-col gap-3">
                         <CustomImage path={project.img} title={project.title} />
 
-                        <div className="flex flex-col gap-2 mb-4">
-                           <h2 className="text-md font-semibold uppercase">{project.title}</h2>
-                           <ul className="flex flex-wrap gap-x-3">
-                              {project.techStack.map((tech, index) => (
-                                 <li key={index} className="uppercase text-base text-Grey">
-                                    {tech}
-                                 </li>
-                              ))}
-                           </ul>
-                        </div>
+                        <ProjectTechStack techStack={project.techStack} title={project.title} />
 
                         <ViewButtons projectUrl={project.liveUrl} githubUrl={project.githubUrl} />
                      </li>

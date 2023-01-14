@@ -13,16 +13,16 @@ const Projects = (): JSX.Element => {
             </header>
 
             <article>
-               <ul className="py-10 flex flex-col gap-10">
+               <ul className="py-10 flex flex-col-reverse gap-10">
                   {data.projects.map((project, index) => (
                      <li key={index} className="flex flex-col gap-3">
                         <div>
                            <Image
-                              src={`/images/${project.img}.png`}
+                              src={project.img}
                               priority={true}
                               blurDataURL="blur"
                               alt={`${project.title} image`}
-                              width={900}
+                              width={780}
                               height={660}
                               //   layout="fill"
                            />

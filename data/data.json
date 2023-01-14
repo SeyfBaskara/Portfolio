@@ -134,7 +134,9 @@
          "githubUrl": "https://github.com/SeyfBaskara/audiophile-store",
          "liveUrl": "https://audiophile-store-chi.vercel.app/home",
          "techStack": ["Javascript", "NextJS", "TailwindCss", "Contentful", "Vercel"],
-         "img": "/images/audiophile.jpg",
+         "srcImg": "/images/audiophile.webp",
+         "fallbackImg": "/images/audiophile.jpg",
+         "alt": "A image showing audiophile store e-commerce landing page project preview",
          "id": "1"
       },
 
@@ -154,7 +156,9 @@
             "heroku",
             "Vercel"
          ],
-         "img": "/images/kanbantask.jpg",
+         "srcImg": "/images/kanbantask.webp",
+         "fallbackImg": "/images/kanbantask.jpg",
+         "alt": "A image showing  kanban task management landing page project preview",
          "id": "2"
       },
       {
@@ -163,7 +167,9 @@
          "githubUrl": "https://github.com/SeyfBaskara/easybank-landing-page",
          "liveUrl": "https://easybank-landing-page-ebon-sigma.vercel.app",
          "techStack": ["Typescript", "NextJS", "Sass", "Vercel"],
-         "img": "/images/easybank.png",
+         "srcImg": "/images/easybank.webp",
+         "fallbackImg": "/images/easybank.png",
+         "alt": "A image showing easybank landing page project preview",
          "id": "3"
       },
       {
@@ -172,7 +178,9 @@
          "githubUrl": "https://github.com/SeyfBaskara/Ecommerce-single-product-page",
          "liveUrl": "https://ecommerce-single-product-page.vercel.app",
          "techStack": ["Typescript", "NextJS", "Sass", "Vercel"],
-         "img": "/images/ecommerce.png",
+         "srcImg": "/images/ecommerce.webp",
+         "fallbackImg": "/images/ecommerce.png",
+         "alt": "A image showing single e-commerce product page project preview",
          "id": "4"
       },
       {
@@ -181,7 +189,9 @@
          "githubUrl": "https://github.com/SeyfBaskara/MERN_Postcard_project",
          "liveUrl": "https://github.com/SeyfBaskara/MERN_Postcard_project",
          "techStack": ["Javascript", "React", "Redux", "Css", "NodeJs", "Express", "MongoDB", "Mongoose"],
-         "img": "/images/bluebird.png",
+         "srcImg": "/images/bluebird.webp",
+         "fallbackImg": "/images/bluebird.png",
+         "alt": "A image showing postcard send platform landing page project preview",
          "id": "5"
       }
    ],

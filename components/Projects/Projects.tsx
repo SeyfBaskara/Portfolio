@@ -10,7 +10,9 @@ interface IProps {
       githubUrl: string
       liveUrl: string
       techStack: string[]
-      img: string
+      srcImg: string
+      fallbackImg: string
+      alt: string
       id: string
    }[]
 }
@@ -28,7 +30,7 @@ const Projects: React.FC<IProps> = ({ projects }) => {
                <ul className="py-10 grid gap-10 md:grid-cols-2">
                   {projects.map((project, index) => (
                      <li key={index} className="flex flex-col gap-3">
-                        <CustomImage path={project.img} title={project.title} />
+                        <CustomImage srcImg={project.srcImg} fallbackImg={project.fallbackImg} alt={project.alt} />
 
                         <ProjectTechStack techStack={project.techStack} title={project.title} />
 

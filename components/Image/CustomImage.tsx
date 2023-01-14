@@ -2,15 +2,18 @@ import React from 'react'
 import Image from 'next/image'
 
 interface IProps {
-   path: string
-   title: string
+   fallbackImg: string
+   srcImg: string
+   alt: string
+   type?: string
 }
 
-const CustomImage: React.FC<IProps> = ({ path, title }) => {
+const CustomImage: React.FC<IProps> = ({ srcImg, fallbackImg, type = 'image/webp', alt }) => {
    return (
-      <div>
-         <Image src={path} priority={true} blurDataURL="blur" alt={`${title} image`} width={770} height={530} />
-      </div>
+      <picture>
+         <source srcSet={srcImg} type={type} />
+         <Image src={fallbackImg} priority={true} blurDataURL="blur" alt={alt} width={770} height={530} />
+      </picture>
    )
 }
 

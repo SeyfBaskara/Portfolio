@@ -8,8 +8,8 @@ const Home: NextPage = () => {
    return (
       <Layout metaData={data.metaData}>
          <>
-            <Technologies />
-            <Projects />
+            <Technologies techStack={data.tools} />
+            <Projects projects={data.projects} />
          </>
       </Layout>
    )

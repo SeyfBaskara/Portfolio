@@ -20,7 +20,7 @@ const SvgLinks: React.FC<IProps> = ({ icon }) => {
          height={icon.height}
          viewBox={icon.viewBox}
          fill="#FFF"
-         className="cursor-pointer hover:fill-Green"
+         className="cursor-pointer hover:fill-Green "
       >
          <path fillRule="evenodd" d={icon.path.d} />
       </svg>

@@ -1,7 +1,8 @@
 import React from 'react'
 import ContactMe from '../Buttons/ContactMe'
 import data from '../../data/data.json'
-import Image from 'next/image'
+import CustomImage from '../Image/CustomImage'
+import ViewButtons from '../Buttons/ViewButtons'
 
 const Projects = (): JSX.Element => {
    return (
@@ -13,20 +14,11 @@ const Projects = (): JSX.Element => {
             </header>
 
             <article>
-               <ul className="py-10 flex flex-col-reverse gap-10">
+               <ul className="py-10 grid gap-10 md:grid-cols-2">
                   {data.projects.map((project, index) => (
                      <li key={index} className="flex flex-col gap-3">
-                        <div>
-                           <Image
-                              src={project.img}
-                              priority={true}
-                              blurDataURL="blur"
-                              alt={`${project.title} image`}
-                              width={780}
-                              height={660}
-                              //   layout="fill"
-                           />
-                        </div>
+                        <CustomImage path={project.img} title={project.title} />
+
                         <div className="flex flex-col gap-2 mb-4">
                            <h2 className="text-md font-semibold uppercase">{project.title}</h2>
                            <ul className="flex flex-wrap gap-x-3">
@@ -37,24 +29,8 @@ const Projects = (): JSX.Element => {
                               ))}
                            </ul>
                         </div>
-                        <div className="flex gap-x-4">
-                           <a
-                              href={project.liveUrl}
-                              target="_blank"
-                              rel="noreferrer"
-                              className="uppercase text-[1.2rem] font-semibold border-b-2 border-Green pb-2"
-                           >
-                              View project
-                           </a>
-                           <a
-                              href={project.githubUrl}
-                              target="_blank"
-                              rel="noreferrer"
-                              className="uppercase text-[1.2rem] font-semibold border-b-2 border-Green pb-2"
-                           >
-                              View Code
-                           </a>
-                        </div>
+
+                        <ViewButtons projectUrl={project.liveUrl} githubUrl={project.githubUrl} />
                      </li>
                   ))}
                </ul>

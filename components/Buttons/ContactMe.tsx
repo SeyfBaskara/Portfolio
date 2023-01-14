@@ -8,7 +8,7 @@ const ContactMe = (): JSX.Element => {
       <div>
          <button
             onClick={handleContactMe}
-            className="font-semibold tracking-widest border-b-2 border-Green pb-1 hover:text-Green"
+            className="font-semibold tracking-widest border-b-2 border-Green pb-1 outline-none hover:text-Green focus:text-Green "
          >
             CONTACT ME
          </button>

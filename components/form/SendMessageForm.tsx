@@ -63,7 +63,7 @@ const SendMessageForm = () => {
             <input
                type="submit"
                value="SEND MESSAGE"
-               className="border-b border-Green text-base font-bold py-1 cursor-pointer hover:text-Green"
+               className="border-b border-Green text-base font-bold py-1 cursor-pointer outline-none hover:text-Green focus:text-Green "
             />
          </div>
       </form>

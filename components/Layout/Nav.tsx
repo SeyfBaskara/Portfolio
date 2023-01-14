@@ -20,7 +20,7 @@ const Nav: React.FC<IProps> = ({ header, footer }) => {
             {data.links.map((link, index) => {
                return (
                   <li key={index}>
-                     <a href={link.url} target="_blank" rel="noreferrer">
+                     <a href={link.url} target="_blank" rel="noreferrer" className="outline-none">
                         <SvgLinks icon={link.icon} />
                      </a>
                   </li>
@@ -32,3 +32,7 @@ const Nav: React.FC<IProps> = ({ header, footer }) => {
 }
 
 export default Nav
+
+/**
+ * fill svg background color on focus
+ */

@@ -1,4 +1,4 @@
-import SendMessageForm from '../../form/SendMessageForm'
+import SendMessageForm from '../../Form/SendMessageForm'
 import Nav from '../Nav'
 import PaternCircle from '../../PaternCircle'
 

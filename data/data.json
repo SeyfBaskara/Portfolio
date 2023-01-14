@@ -129,32 +129,15 @@
    ],
    "projects": [
       {
-         "title": "Postcard",
-         "description": "This is 5 days of hackday MERN project. You can create a digital post card to save in database.",
-         "githubUrl": "https://github.com/SeyfBaskara/MERN_Postcard_project",
-         "liveUrl": "https://github.com/SeyfBaskara/MERN_Postcard_project",
-         "techStack": ["Javascript", "React", "Redux", "Css", "NodeJs", "Express", "MongoDB", "Mongoose"],
-         "img": "/images/bluebird.png",
-         "id": "2"
+         "title": "Audiophile Store",
+         "description": "This is frontend mentor e-commerce project build with nextJS, tailwindcs and use headless CMS as contentful. Design provided by frontend mentor platform.",
+         "githubUrl": "https://github.com/SeyfBaskara/audiophile-store",
+         "liveUrl": "https://audiophile-store-chi.vercel.app/home",
+         "techStack": ["Javascript", "NextJS", "TailwindCss", "Contentful", "Vercel"],
+         "img": "/images/audiophile.jpg",
+         "id": "1"
       },
-      {
-         "title": "Single Product Page ",
-         "description": "This is E-commerce single product page challenge from Frontend mentor. Build with NextJs, Typescript, Sass and deploy with Vercel.",
-         "githubUrl": "https://github.com/SeyfBaskara/Ecommerce-single-product-page",
-         "liveUrl": "https://ecommerce-single-product-page.vercel.app",
-         "techStack": ["Typescript", "NextJS", "Sass", "Vercel"],
-         "img": "/images/ecommerce.png",
-         "id": "4"
-      },
-      {
-         "title": "Easybank Page",
-         "description": "This is easybank landing page challenge from Frontend mentor. Build with NextJs, Typescript, Sass and deploy with Vercel.",
-         "githubUrl": "https://github.com/SeyfBaskara/easybank-landing-page",
-         "liveUrl": "https://easybank-landing-page-ebon-sigma.vercel.app",
-         "techStack": ["Typescript", "NextJS", "Sass", "Vercel"],
-         "img": "/images/easybank.png",
-         "id": "5"
-      },
+
       {
          "title": "Task Management",
          "description": "Challenge from Frontend mentor. Build with NextJs, Redux, Typescript, TailwindCss, Nodejs, Express, MongoDB, Mongoose and deploy with Vercel and Heroku.",
@@ -172,16 +155,34 @@
             "Vercel"
          ],
          "img": "/images/kanbantask.jpg",
-         "id": "6"
+         "id": "2"
       },
       {
-         "title": "Audiophile Store",
-         "description": "This is frontend mentor e-commerce project build with nextJS, tailwindcs and use headless CMS as contentful. Design provided by frontend mentor platform.",
-         "githubUrl": "https://github.com/SeyfBaskara/audiophile-store",
-         "liveUrl": "https://audiophile-store-chi.vercel.app/home",
-         "techStack": ["Javascript", "NextJS", "TailwindCss", "Contentful", "Vercel"],
-         "img": "/images/audiophile.jpg",
-         "id": "7"
+         "title": "Easybank Page",
+         "description": "This is easybank landing page challenge from Frontend mentor. Build with NextJs, Typescript, Sass and deploy with Vercel.",
+         "githubUrl": "https://github.com/SeyfBaskara/easybank-landing-page",
+         "liveUrl": "https://easybank-landing-page-ebon-sigma.vercel.app",
+         "techStack": ["Typescript", "NextJS", "Sass", "Vercel"],
+         "img": "/images/easybank.png",
+         "id": "3"
+      },
+      {
+         "title": "Single Product Page ",
+         "description": "This is E-commerce single product page challenge from Frontend mentor. Build with NextJs, Typescript, Sass and deploy with Vercel.",
+         "githubUrl": "https://github.com/SeyfBaskara/Ecommerce-single-product-page",
+         "liveUrl": "https://ecommerce-single-product-page.vercel.app",
+         "techStack": ["Typescript", "NextJS", "Sass", "Vercel"],
+         "img": "/images/ecommerce.png",
+         "id": "4"
+      },
+      {
+         "title": "Postcard",
+         "description": "This is 5 days of hackday MERN project. You can create a digital post card to save in database.",
+         "githubUrl": "https://github.com/SeyfBaskara/MERN_Postcard_project",
+         "liveUrl": "https://github.com/SeyfBaskara/MERN_Postcard_project",
+         "techStack": ["Javascript", "React", "Redux", "Css", "NodeJs", "Express", "MongoDB", "Mongoose"],
+         "img": "/images/bluebird.png",
+         "id": "5"
       }
    ],
    "metaData": {

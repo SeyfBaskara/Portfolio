@@ -20,7 +20,7 @@ const Nav: React.FC<IProps> = ({ header, footer }) => {
             {data.links.map((link, index) => {
                return (
                   <li key={index}>
-                     <a href={link.url} target="_blank" rel="noreferrer" className="outline-none">
+                     <a href={link.url} target="_blank" rel="noreferrer" className="outline-offset-4">
                         <SvgLinks icon={link.icon} />
                      </a>
                   </li>

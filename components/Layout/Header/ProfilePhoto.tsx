@@ -1,6 +1,5 @@
-import React from 'react'
 import Image from 'next/image'
-import Nav from './Layout/Nav'
+import Nav from '../Nav'
 
 const ProfilePhoto = (): JSX.Element => {
    return (

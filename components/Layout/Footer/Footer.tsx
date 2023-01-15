@@ -1,5 +1,5 @@
 import SendMessageForm from '../../Form/SendMessageForm'
-import Nav from '../Nav'
+import PlatformLinks from '../../Links/PlatformLinks'
 import PaternCircle from '../../PaternCircle'
 
 const Footer = (): JSX.Element => {
@@ -16,7 +16,7 @@ const Footer = (): JSX.Element => {
                </div>
                <SendMessageForm />
             </section>
-            <Nav footer={true} />
+            <PlatformLinks footer={true} />
          </article>
          <PaternCircle footer={true} />
       </footer>

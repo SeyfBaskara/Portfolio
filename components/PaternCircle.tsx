@@ -14,7 +14,7 @@ const style = {
 
 const PaternCircle: React.FC<IProps> = ({ header, footer }) => {
    return (
-      <section>
+      <>
          {header && (
             <div className="absolute top-[21rem] -right-16 sm:top-64 md:right-72 md:top-72 lg:right-[23rem]">
                <Image src="/images/pattern-circle.svg" alt="pattern circle" width={129} height={129} />
@@ -23,7 +23,7 @@ const PaternCircle: React.FC<IProps> = ({ header, footer }) => {
          <div className={`${header ? style.header : footer ? style.footer : style.techStack}`}>
             <Image src="/images/pattern-rings.svg" alt="pattern circle" width={530} height={129} />
          </div>
-      </section>
+      </>
    )
 }
 

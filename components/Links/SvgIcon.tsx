@@ -12,7 +12,7 @@ interface IProps {
    }
 }
 
-const SvgLinks: React.FC<IProps> = ({ icon }) => {
+const SvgIcon: React.FC<IProps> = ({ icon }) => {
    return (
       <svg
          xmlns={icon.xmlns}
@@ -27,4 +27,4 @@ const SvgLinks: React.FC<IProps> = ({ icon }) => {
    )
 }
 
-export default SvgLinks
+export default SvgIcon

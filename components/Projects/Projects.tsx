@@ -19,27 +19,25 @@ interface IProps {
 
 const Projects: React.FC<IProps> = ({ projects }) => {
    return (
-      <section aria-label="projects" className="p-4">
-         <div className="md:w-11/12 md:m-auto lg:w-4/5">
-            <header className="flex items-center justify-between">
-               <h1 className="text-large font-bold">Projects</h1>
-               <ContactMe />
-            </header>
+      <section aria-label="projects" className="p-4 md:w-11/12 md:m-auto lg:w-4/5">
+         <header className="flex items-center justify-between">
+            <h1 className="text-large font-bold">Projects</h1>
+            <ContactMe />
+         </header>
 
-            <article>
-               <ul className="py-10 grid gap-10 md:grid-cols-2">
-                  {projects.map((project, index) => (
-                     <li key={index} className="flex flex-col gap-3">
-                        <CustomImage srcImg={project.srcImg} fallbackImg={project.fallbackImg} alt={project.alt} />
+         <article>
+            <ul className="py-10 grid gap-10 md:grid-cols-2">
+               {projects.map((project, index) => (
+                  <li key={index} className="flex flex-col gap-3">
+                     <CustomImage srcImg={project.srcImg} fallbackImg={project.fallbackImg} alt={project.alt} />
 
-                        <ProjectTechStack techStack={project.techStack} title={project.title} />
+                     <ProjectTechStack techStack={project.techStack} title={project.title} />
 
-                        <ViewButtons projectUrl={project.liveUrl} githubUrl={project.githubUrl} />
-                     </li>
-                  ))}
-               </ul>
-            </article>
-         </div>
+                     <ViewButtons projectUrl={project.liveUrl} githubUrl={project.githubUrl} />
+                  </li>
+               ))}
+            </ul>
+         </article>
       </section>
    )
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import data from '../../data/data.json'
-import SvgLinks from '../Links/SvgLinks'
+import SvgIcon from './SvgIcon'
+import Link from 'next/link'
 
 interface IProps {
    header?: boolean
@@ -12,7 +13,7 @@ const style = {
    footer: 'flex flex-col items-center gap-4 border-t pt-5 border-Grey sm:flex-row sm:justify-between sm:pl-2',
 }
 
-const Nav: React.FC<IProps> = ({ header, footer }) => {
+const PlatformLinks: React.FC<IProps> = ({ header, footer }) => {
    return (
       <div className={`${header ? style.header : style.footer}`}>
          {!header && <h1 className="font-bold text-md">SeyfettinBaskara</h1>}
@@ -20,9 +21,11 @@ const Nav: React.FC<IProps> = ({ header, footer }) => {
             {data.links.map((link, index) => {
                return (
                   <li key={index}>
-                     <a href={link.url} target="_blank" rel="noreferrer" className="outline-offset-4">
-                        <SvgLinks icon={link.icon} />
-                     </a>
+                     <Link href={link.url} className="outline-offset-4">
+                        <a target="_blank" rel="noreferrer">
+                           <SvgIcon icon={link.icon} />
+                        </a>
+                     </Link>
                   </li>
                )
             })}
@@ -31,8 +34,4 @@ const Nav: React.FC<IProps> = ({ header, footer }) => {
    )
 }
 
-export default Nav
-
-/**
- * fill svg background color on focus
- */
+export default PlatformLinks

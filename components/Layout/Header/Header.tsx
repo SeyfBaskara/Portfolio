@@ -6,7 +6,9 @@ const Header = (): JSX.Element => {
    return (
       <header className="text-White relative overflow-hidden pt-5">
          <section className="md:w-11/12 md:m-auto lg:w-4/5">
-            <h1 className="font-bold text-md text-center mb-2 sm:text-left px-4">SeyfettinBaskara</h1>
+            <header>
+               <h1 className="font-bold text-md text-center mb-2 sm:text-left px-4">SeyfettinBaskara</h1>
+            </header>
 
             <article className="flex flex-col items-center sm:flex-row-reverse sm:justify-between sm:w-full">
                <ProfilePhoto />
@@ -15,8 +17,8 @@ const Header = (): JSX.Element => {
                      I&apos;m <span className="border-b-4 border-Green">Seyfettin Baskara.</span>
                   </h2>
                   <p className="text-base">
-                     Based in the Sweden, I’m a full-stack developer passionate about building accessible web apps that
-                     users love.
+                     Based in the Stockholm, I’m a full-stack developer passionate about building accessible web apps
+                     that users love.
                   </p>
                   <ContactMe />
                </div>

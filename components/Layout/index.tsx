@@ -22,11 +22,11 @@ const Layout: React.FC<IProps> = ({ children, metaData }) => {
             <title>{title}</title>
          </Head>
 
-         <div>
+         <>
             <Header />
             <main className="text-White">{children}</main>
             <Footer />
-         </div>
+         </>
       </>
    )
 }

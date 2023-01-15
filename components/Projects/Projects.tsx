@@ -28,11 +28,9 @@ const Projects: React.FC<IProps> = ({ projects }) => {
          <article>
             <ul className="py-10 grid gap-10 md:grid-cols-2">
                {projects.map((project, index) => (
-                  <li key={index} className="flex flex-col gap-3">
+                  <li key={index} className="flex flex-col gap-3 grow-1 last:mt-auto">
                      <CustomImage srcImg={project.srcImg} fallbackImg={project.fallbackImg} alt={project.alt} />
-
                      <ProjectTechStack techStack={project.techStack} title={project.title} />
-
                      <ViewButtons projectUrl={project.liveUrl} githubUrl={project.githubUrl} />
                   </li>
                ))}

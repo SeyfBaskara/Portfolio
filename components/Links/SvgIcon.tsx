@@ -1,4 +1,5 @@
 import React from 'react'
+import ViewButtons from '../Buttons/ViewButtons'
 
 interface IProps {
    icon: {
@@ -18,7 +19,7 @@ const SvgIcon: React.FC<IProps> = ({ icon }) => {
          xmlns={icon.xmlns}
          width={icon.width}
          height={icon.height}
-         viewBox={icon.viewBox}
+         viewBox={icon.viewBox ? icon.viewBox : ''}
          fill="#FFF"
          className="cursor-pointer hover:fill-Green "
       >

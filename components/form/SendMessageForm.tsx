@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm, SubmitHandler } from 'react-hook-form'
+import axios from 'axios'
 
 type FormValues = {
    name: string
@@ -14,11 +15,39 @@ const style = {
 }
 
 const SendMessageForm = () => {
-   const { register, handleSubmit, reset } = useForm<FormValues>()
+   const [loading, setLoading] = useState<boolean>(false)
+   const [error, setError] = useState<boolean>(false)
+   const [hasSubmitted, setHasSubmitted] = useState<boolean>(false)
 
-   const onSubmit: SubmitHandler<FormValues> = (data) => {
-      console.log(data)
+   const {
+      register,
+      handleSubmit,
+      reset,
+      formState: { errors, isSubmitting, isSubmitSuccessful },
+   } = useForm<FormValues>()
+
+   const onSubmit: SubmitHandler<FormValues> = async (formState) => {
+      console.log(formState)
+
+      setLoading(true)
+      const response = await axios.post('/api/sendMail', formState)
+      setLoading(false)
+
+      if (response.status !== 200) {
+         setError(true)
+         setTimeout(() => {
+            setError(false)
+         }, 5000)
+         return
+      }
+
       reset()
+      setError(false)
+      setHasSubmitted(true)
+
+      setTimeout(() => {
+         setHasSubmitted(false)
+      }, 5000)
    }
 
    return (
@@ -26,17 +55,22 @@ const SendMessageForm = () => {
          <label htmlFor="name" className={`${style.label}`}>
             <span className={`${style.span}`}>NAME</span>
             <input
-               className={`${style.input}`}
+               className={`${style.input} ${errors.name && 'focus:border-red-400'}`}
                type="text"
                autoComplete="off"
                {...register('name', { required: true })}
             />
+            {errors.name && errors.name.type === 'required' && (
+               <span role="alert" className="pt-1 text-red-400">
+                  Name is required
+               </span>
+            )}
          </label>
 
          <label htmlFor="email" className={`${style.label}`}>
             <span className={`${style.span}`}>EMAIL</span>
             <input
-               className={`${style.input}`}
+               className={`${style.input} ${errors.email && 'focus:border-red-400'}`}
                type="email"
                autoComplete="off"
                {...register('email', {
@@ -47,17 +81,38 @@ const SendMessageForm = () => {
                   },
                })}
             />
+            {errors.email && errors.email.type === 'required' && (
+               <span role="alert" className="pt-1 text-red-400">
+                  Email is required
+               </span>
+            )}
+            {errors.email && errors.email.type === 'pattern' && (
+               <span role="alert" className="pt-1 text-red-400">
+                  Invalid email address
+               </span>
+            )}
          </label>
 
          <label htmlFor="message" className={`${style.label}`}>
             <span className={`${style.span}`}>MESSAGE</span>
             <textarea
-               className={`${style.input}`}
+               className={`${style.input} ${errors.message && 'focus:border-red-400'}`}
                rows={4}
                autoComplete="off"
                {...register('message', { required: true })}
             />
+            {errors.message && errors.message.type === 'required' && (
+               <span role="alert" className="pt-1 text-red-400">
+                  Message is required
+               </span>
+            )}
          </label>
+
+         <div>
+            {loading && <p className="text-base text-center">Sending...</p>}
+            {error && <p className="text-base text-center text-red-400">Something went wrong, try again...</p>}
+            {hasSubmitted && <p className="text-base text-center text-Green">Your message has been sent!</p>}
+         </div>
 
          <div className="flex justify-end">
             <input

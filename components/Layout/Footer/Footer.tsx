@@ -14,8 +14,10 @@ const Footer = (): JSX.Element => {
                      I&apos;ll get back to you as soon as possible.
                   </p>
                </div>
+
                <SendMessageForm />
             </div>
+
             <PlatformLinks footer={true} />
          </div>
          <PaternCircle footer={true} />

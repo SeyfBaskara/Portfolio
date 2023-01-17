@@ -23,31 +23,37 @@ const SendMessageForm = () => {
       register,
       handleSubmit,
       reset,
-      formState: { errors, isSubmitting, isSubmitSuccessful },
+      formState: { errors },
    } = useForm<FormValues>()
 
    const onSubmit: SubmitHandler<FormValues> = async (formState) => {
-      console.log(formState)
-
       setLoading(true)
-      const response = await axios.post('/api/sendMail', formState)
-      setLoading(false)
 
-      if (response.status !== 200) {
+      try {
+         const response = await axios.post('/api/sendMail', formState)
+
+         if (response.status !== 200) {
+            throw Error
+         }
+      } catch (error) {
+         setLoading(false)
          setError(true)
+
          setTimeout(() => {
             setError(false)
          }, 5000)
          return
       }
 
-      reset()
+      setLoading(false)
       setError(false)
       setHasSubmitted(true)
 
       setTimeout(() => {
          setHasSubmitted(false)
       }, 5000)
+
+      reset()
    }
 
    return (

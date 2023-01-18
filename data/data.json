@@ -16,10 +16,73 @@
       "docker",
       "github"
    ],
-   "logoNames": ["linkedin", "github", "gmail"],
-   "linkedinUrl": "https://www.linkedin.com/in/seyfettinbaskara/",
-   "githubUrl": "https://github.com/SeyfBaskara",
-   "gmailUrl": "mailto:seyfettin.baskara@appliedtechnology.se",
+   "tools": [
+      "HTML",
+      "CSS",
+      "SASS",
+      "Tailwind",
+      "Javascript",
+      "Typescript",
+      "React",
+      "Redux",
+      "NextJs",
+      "NodeJs",
+      "GoLang",
+      "Express",
+      "REST",
+      "GraphQL",
+      "MongoDB",
+      "PostgreSQL",
+      "Mocha",
+      "Jest",
+      "Docker",
+      "Github",
+      "Netlify",
+      "Heroku",
+      "Vercel",
+      "Contentful"
+   ],
+   "links": [
+      {
+         "name": "icon-github",
+         "url": "https://github.com/SeyfBaskara",
+         "icon": {
+            "xmlns": "http://www.w3.org/2000/svg",
+            "viewBox": "0 0 24 24",
+            "width": 25,
+            "height": 25,
+            "path": {
+               "d": "M12.304 0C5.506 0 0 5.506 0 12.304c0 5.444 3.522 10.042 8.413 11.672.615.108.845-.261.845-.584 0-.292-.015-1.261-.015-2.291-3.091.569-3.891-.754-4.137-1.446-.138-.354-.738-1.446-1.261-1.738-.43-.23-1.046-.8-.016-.815.97-.015 1.661.892 1.892 1.261 1.107 1.86 2.876 1.338 3.584 1.015.107-.8.43-1.338.784-1.646-2.738-.307-5.598-1.368-5.598-6.074 0-1.338.477-2.446 1.26-3.307-.122-.308-.553-1.569.124-3.26 0 0 1.03-.323 3.383 1.26.985-.276 2.03-.415 3.076-.415 1.046 0 2.092.139 3.076.416 2.353-1.6 3.384-1.261 3.384-1.261.676 1.691.246 2.952.123 3.26.784.861 1.26 1.953 1.26 3.307 0 4.721-2.875 5.767-5.613 6.074.446.385.83 1.123.83 2.277 0 1.645-.015 2.968-.015 3.383 0 .323.231.708.846.584a12.324 12.324 0 0 0 8.382-11.672C24.607 5.506 19.101 0 12.304 0Z"
+            }
+         }
+      },
+      {
+         "name": "icon-linkedin",
+         "url": "https://www.linkedin.com/in/seyfettinbaskara/",
+         "icon": {
+            "xmlns": "http://www.w3.org/2000/svg",
+            "viewBox": "0 0 24 24",
+            "width": 25,
+            "height": 25,
+            "path": {
+               "d": "M5.551 3.304c-1.14 0-2.067.926-2.067 2.064 0 1.14.928 2.066 2.067 2.066a2.066 2.066 0 0 0 0-4.13ZM3.767 8.998v11.453h3.562L7.33 8.998H3.767Zm5.798 0V20.45l3.554.002.002-5.668c0-1.454.253-2.941 2.132-2.941 1.851 0 1.851 1.755 1.851 3.036v5.571l3.559-.001v-6.28c0-2.834-.517-5.457-4.27-5.457-1.763 0-2.916.997-3.368 1.85h-.05V8.997h-3.41ZM22.435 24H1.982c-.976 0-1.77-.777-1.77-1.732V1.731C.212.776 1.006 0 1.982 0h20.453c.98 0 1.777.776 1.777 1.73v20.538c0 .955-.797 1.732-1.777 1.732Z"
+            }
+         }
+      },
+      {
+         "name": "icons8-gmail-logo",
+         "url": "mailto:seyfettin.baskara@gmail.com",
+         "icon": {
+            "xmlns": "http://www.w3.org/2000/svg",
+            "viewBox": "0 0 64 64",
+            "width": 30,
+            "height": 30,
+            "path": {
+               "d": "M55 10H9a4 4 0 0 0-4 4v34a4 4 0 0 0 4 4h46a4 4 0 0 0 4-4V14a4 4 0 0 0-4-4zm0 35.738C54.954 47 53.901 48 52.618 48H49.5L51 21 32 33 13 22l1.5 26h-3.118C10.099 48 9.046 47 9 45.738V16.289c0-1.25 1.03-2.263 2.3-2.263h1.2L32 29l19.5-14.974h1.2c1.27 0 2.3 1.013 2.3 2.263v29.449z"
+            }
+         }
+      }
+   ],
    "profile": [
       {
          "title": "Full-Stack Developer",
@@ -70,48 +133,71 @@
          "description": "This is frontend mentor e-commerce project build with nextJS, tailwindcs and use headless CMS as contentful. Design provided by frontend mentor platform.",
          "githubUrl": "https://github.com/SeyfBaskara/audiophile-store",
          "liveUrl": "https://audiophile-store-chi.vercel.app/home",
-         "img": "audiophile",
-         "id": "7"
+         "techStack": ["Javascript", "NextJS", "TailwindCss", "Contentful", "Vercel"],
+         "srcImg": "/images/audiophile.webp",
+         "fallbackImg": "/images/audiophile.jpg",
+         "alt": "A image showing audiophile store e-commerce landing page project preview",
+         "id": "1"
       },
+
       {
          "title": "Task Management",
          "description": "Challenge from Frontend mentor. Build with NextJs, Redux, Typescript, TailwindCss, Nodejs, Express, MongoDB, Mongoose and deploy with Vercel and Heroku.",
          "githubUrl": "https://github.com/SeyfBaskara/kanban-task-management",
          "liveUrl": "https://kanban-task-management-1l212qpl5-seyfbaskara.vercel.app",
-         "img": "kanbantask",
-         "id": "6"
+         "techStack": [
+            "Typescript",
+            "NextJS",
+            "TailwindCss",
+            "NodeJS",
+            "Express",
+            "MongoDB",
+            "Moongose",
+            "heroku",
+            "Vercel"
+         ],
+         "srcImg": "/images/kanbantask.webp",
+         "fallbackImg": "/images/kanbantask.jpg",
+         "alt": "A image showing  kanban task management landing page project preview",
+         "id": "2"
       },
       {
          "title": "Easybank Page",
          "description": "This is easybank landing page challenge from Frontend mentor. Build with NextJs, Typescript, Sass and deploy with Vercel.",
          "githubUrl": "https://github.com/SeyfBaskara/easybank-landing-page",
          "liveUrl": "https://easybank-landing-page-ebon-sigma.vercel.app",
-         "img": "easybank",
-         "id": "5"
+         "techStack": ["Typescript", "NextJS", "Sass", "Vercel"],
+         "srcImg": "/images/easybank.webp",
+         "fallbackImg": "/images/easybank.png",
+         "alt": "A image showing easybank landing page project preview",
+         "id": "3"
       },
       {
          "title": "Single Product Page ",
          "description": "This is E-commerce single product page challenge from Frontend mentor. Build with NextJs, Typescript, Sass and deploy with Vercel.",
          "githubUrl": "https://github.com/SeyfBaskara/Ecommerce-single-product-page",
          "liveUrl": "https://ecommerce-single-product-page.vercel.app",
-         "img": "ecommerce",
+         "techStack": ["Typescript", "NextJS", "Sass", "Vercel"],
+         "srcImg": "/images/ecommerce.webp",
+         "fallbackImg": "/images/ecommerce.png",
+         "alt": "A image showing single e-commerce product page project preview",
          "id": "4"
-      },
-      {
-         "title": "Garden JS ",
-         "description": "This is team project built with React, Redux, Sass, Node, Express, JWT and MangoDB.",
-         "githubUrl": "https://github.com/SeyfBaskara/garden-js",
-         "liveUrl": "https://gardenproject-client.herokuapp.com/",
-         "img": "gardenjs",
-         "id": "1"
       },
       {
          "title": "Postcard",
          "description": "This is 5 days of hackday MERN project. You can create a digital post card to save in database.",
          "githubUrl": "https://github.com/SeyfBaskara/MERN_Postcard_project",
          "liveUrl": "https://github.com/SeyfBaskara/MERN_Postcard_project",
-         "img": "bluebird",
-         "id": "2"
+         "techStack": ["Javascript", "React", "Redux", "Css", "NodeJs", "Express", "MongoDB", "Mongoose"],
+         "srcImg": "/images/bluebird.webp",
+         "fallbackImg": "/images/bluebird.png",
+         "alt": "A image showing postcard send platform landing page project preview",
+         "id": "5"
       }
-   ]
+   ],
+   "metaData": {
+      "title": "Seyfettin Baskara",
+      "description": "Full-stack software developer with experience  mainly in Javascript, TypeScript, GoLang, React, NextJs, NodeJS. Skilled in delivering high-quality software solutions on time. Passionate about solving complex problems and creating innovative solutions.",
+      "keywords": "Software developer, FullStack developer, Front-end development, Back-end development, Web development, Mobile development, Javascript, TypeScript, GoLang, React, NextJs, NodeJS"
+   }
 }

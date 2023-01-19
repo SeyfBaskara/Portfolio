@@ -193,6 +193,17 @@
          "fallbackImg": "/images/bluebird.png",
          "alt": "A image showing postcard send platform landing page project preview",
          "id": "5"
+      },
+      {
+         "title": "LinkedIn Clone ",
+         "description": "This project built with React, Redux and Firestore. Mostly focus on layout of LinkedIn.",
+         "githubUrl": "https://github.com/SeyfBaskara/LinkedIn-clone",
+         "liveUrl": "https://linked-in-clone-steel.vercel.app",
+         "techStack": ["Javascript", "React", "Redux", "Css", "Material UI", "Firestore database", "Firebase auth"],
+         "srcImg": "/images/linkedinImg.webp",
+         "fallbackImg": "/images/linkedinImg.png",
+         "alt": "A image showing linkedin clone project preview",
+         "id": "6"
       }
    ],
    "metaData": {

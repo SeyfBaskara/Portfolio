@@ -144,7 +144,7 @@
          "title": "Task Management",
          "description": "Challenge from Frontend mentor. Build with NextJs, Redux, Typescript, TailwindCss, Nodejs, Express, MongoDB, Mongoose and deploy with Vercel and Heroku.",
          "githubUrl": "https://github.com/SeyfBaskara/kanban-task-management",
-         "liveUrl": "https://kanban-task-management-1l212qpl5-seyfbaskara.vercel.app",
+         "liveUrl": "https://kanban-task-management-two.vercel.app",
          "techStack": [
             "Typescript",
             "NextJS",

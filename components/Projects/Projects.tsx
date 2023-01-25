@@ -1,7 +1,9 @@
+import React, { useState } from 'react'
 import ContactMe from '../Buttons/ContactMe'
 import CustomImage from '../Image/CustomImage'
 import ProjectTechStack from './ProjectTechStack'
 import ViewButtons from '../Buttons/ViewButtons'
+import ReadAbtProjectButton from '../Buttons/ReadAbtProjectButton'
 
 interface IProps {
    projects: {
@@ -18,6 +20,8 @@ interface IProps {
 }
 
 const Projects: React.FC<IProps> = ({ projects }) => {
+   const [isElement, setIsElement] = useState<number | null>(null)
+
    return (
       <section aria-label="projects" className="p-4 md:w-11/12 md:m-auto lg:w-4/5">
          <header className="flex items-center justify-between">
@@ -27,13 +31,28 @@ const Projects: React.FC<IProps> = ({ projects }) => {
 
          <article>
             <ul className="py-10 grid gap-10 md:grid-cols-2">
-               {projects.map((project, index) => (
-                  <li key={index} className="flex flex-col gap-3 grow-1 last:mt-auto">
-                     <CustomImage srcImg={project.srcImg} fallbackImg={project.fallbackImg} alt={project.alt} />
-                     <ProjectTechStack techStack={project.techStack} title={project.title} />
-                     <ViewButtons projectUrl={project.liveUrl} githubUrl={project.githubUrl} />
-                  </li>
-               ))}
+               {projects.map((project, index) => {
+                  return (
+                     <li key={index} className="flex flex-col gap-3 grow-1 last:mt-auto">
+                        <div
+                           className="relative cursor-pointer"
+                           onMouseEnter={() => setIsElement(index)}
+                           onMouseLeave={() => setIsElement(null)}
+                           onTouchStart={() => setIsElement(index)}
+                           onTouchEnd={() => setIsElement(null)}
+                        >
+                           {isElement === index && (
+                              <div className="absolute flex items-center justify-center bg-black w-full h-full z-10 opacity-80">
+                                 <ReadAbtProjectButton />
+                              </div>
+                           )}
+                           <CustomImage srcImg={project.srcImg} fallbackImg={project.fallbackImg} alt={project.alt} />
+                        </div>
+                        <ProjectTechStack techStack={project.techStack} title={project.title} />
+                        <ViewButtons projectUrl={project.liveUrl} githubUrl={project.githubUrl} />
+                     </li>
+                  )
+               })}
             </ul>
          </article>
       </section>

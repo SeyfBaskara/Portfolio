@@ -1,13 +1,14 @@
 import React from 'react'
 
-const ReabAbtProjectButton = (): JSX.Element => {
-   const handleReadAbtProject = () => {
-      console.log('click read about project button')
-   }
+interface IProps {
+   handleFunc: (event: React.MouseEvent<HTMLButtonElement>) => void
+}
+
+const ReabAbtProjectButton: React.FC<IProps> = ({ handleFunc }) => {
    return (
       <>
          <button
-            onClick={handleReadAbtProject}
+            onClick={handleFunc}
             className="font-semibold tracking-widest border-b-2 border-Green pb-1 outline-none hover:text-Green focus:text-Green "
          >
             READ ABOUT PROJECT

@@ -4,6 +4,7 @@ import CustomImage from '../Image/CustomImage'
 import ProjectTechStack from './ProjectTechStack'
 import ViewButtons from '../Buttons/ViewButtons'
 import ReadAbtProjectButton from '../Buttons/ReadAbtProjectButton'
+import ProjectDescription from './ProjectDescription'
 
 interface IProps {
    projects: {
@@ -21,6 +22,11 @@ interface IProps {
 
 const Projects: React.FC<IProps> = ({ projects }) => {
    const [isElement, setIsElement] = useState<number | null>(null)
+   const [showDescription, setShowDescription] = useState<boolean>(false)
+
+   const handleReadAbtProjectButton = () => {
+      setShowDescription(true)
+   }
 
    return (
       <section aria-label="projects" className="p-4 md:w-11/12 md:m-auto lg:w-4/5">
@@ -37,13 +43,20 @@ const Projects: React.FC<IProps> = ({ projects }) => {
                         <div
                            className="relative cursor-pointer"
                            onMouseEnter={() => setIsElement(index)}
-                           onMouseLeave={() => setIsElement(null)}
+                           onMouseLeave={() => {
+                              setIsElement(null)
+                              setShowDescription(false)
+                           }}
                            onTouchStart={() => setIsElement(index)}
                            onTouchEnd={() => setIsElement(null)}
                         >
                            {isElement === index && (
                               <div className="absolute flex items-center justify-center bg-black w-full h-full z-10 opacity-80">
-                                 <ReadAbtProjectButton />
+                                 {showDescription ? (
+                                    <ProjectDescription description={project.description} />
+                                 ) : (
+                                    <ReadAbtProjectButton handleFunc={handleReadAbtProjectButton} />
+                                 )}
                               </div>
                            )}
                            <CustomImage srcImg={project.srcImg} fallbackImg={project.fallbackImg} alt={project.alt} />
@@ -60,3 +73,8 @@ const Projects: React.FC<IProps> = ({ projects }) => {
 }
 
 export default Projects
+
+/**
+ * TODO
+ * should pops up project details on click of read abt project button
+ */

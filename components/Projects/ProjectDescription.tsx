@@ -7,7 +7,7 @@ interface IProps {
 const ProjectDescription: React.FC<IProps> = ({ description }) => {
    return (
       <>
-         <p className="text-md p-5 text-center">{description}</p>
+         <p className="text-md p-3 text-center">{description}</p>
       </>
    )
 }

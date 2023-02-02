@@ -130,7 +130,7 @@
    "projects": [
       {
          "title": "Audiophile Store",
-         "description": "This is frontend mentor e-commerce project build with nextJS, tailwindcs and use headless CMS as contentful. Design provided by frontend mentor platform.",
+         "description": "This is an e-commerce project challenge provided by a frontend mentor with content, responsive design for all device in the format of Sketch and Figma. The project built with Nextjs and Contentful by generating dynamic site.",
          "githubUrl": "https://github.com/SeyfBaskara/audiophile-store",
          "liveUrl": "https://audiophile-store-chi.vercel.app/home",
          "techStack": ["Javascript", "NextJS", "TailwindCss", "Contentful", "Vercel"],
@@ -142,7 +142,7 @@
 
       {
          "title": "Task Management",
-         "description": "Challenge from Frontend mentor. Build with NextJs, Redux, Typescript, TailwindCss, Nodejs, Express, MongoDB, Mongoose and deploy with Vercel and Heroku.",
+         "description": "The kanban task management is a full-stack project challenge provided by a frontend mentor with all design. Users can create, read, update, and delete multiple boards by assigning progression columns with tasks and subtasks.",
          "githubUrl": "https://github.com/SeyfBaskara/kanban-task-management",
          "liveUrl": "https://kanban-task-management-two.vercel.app",
          "techStack": [
@@ -153,7 +153,7 @@
             "Express",
             "MongoDB",
             "Moongose",
-            "heroku",
+            "Render",
             "Vercel"
          ],
          "srcImg": "/images/kanbantask.webp",
@@ -163,7 +163,7 @@
       },
       {
          "title": "Easybank Page",
-         "description": "This is easybank landing page challenge from Frontend mentor. Build with NextJs, Typescript, Sass and deploy with Vercel.",
+         "description": "The Easybank Landing page is a responsive single-page frontend project. It's nothing more than a showcase of design. This CSS-based project challenge has been provided by a Frontend Mentor.",
          "githubUrl": "https://github.com/SeyfBaskara/easybank-landing-page",
          "liveUrl": "https://easybank-landing-page-ebon-sigma.vercel.app",
          "techStack": ["Typescript", "NextJS", "Sass", "Vercel"],
@@ -174,7 +174,7 @@
       },
       {
          "title": "Single Product Page ",
-         "description": "This is E-commerce single product page challenge from Frontend mentor. Build with NextJs, Typescript, Sass and deploy with Vercel.",
+         "description": "This is a responsive CSS-based single-page-product frontend project. ",
          "githubUrl": "https://github.com/SeyfBaskara/Ecommerce-single-product-page",
          "liveUrl": "https://ecommerce-single-product-page.vercel.app",
          "techStack": ["Typescript", "NextJS", "Sass", "Vercel"],
@@ -196,7 +196,7 @@
       },
       {
          "title": "LinkedIn Clone ",
-         "description": "This project built with React, Redux and Firestore. Mostly focus on layout of LinkedIn.",
+         "description": "The LinkedIn Clone project built with React, Redux and Firestore. Mostly focus on layout of LinkedIn.",
          "githubUrl": "https://github.com/SeyfBaskara/LinkedIn-clone",
          "liveUrl": "https://linked-in-clone-steel.vercel.app",
          "techStack": ["Javascript", "React", "Redux", "Css", "Material UI", "Firestore database", "Firebase auth"],

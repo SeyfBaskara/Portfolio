@@ -48,7 +48,9 @@ const Projects: React.FC<IProps> = ({ projects }) => {
                               setShowDescription(false)
                            }}
                            onTouchStart={() => setIsElement(index)}
-                           onTouchEnd={() => setIsElement(index)}
+                           onTouchEnd={() => {
+                              setShowDescription(false)
+                           }}
                         >
                            {isElement === index && (
                               <div className="absolute flex items-center justify-center bg-black w-full h-full z-10 opacity-80">

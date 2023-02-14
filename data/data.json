@@ -1,21 +1,4 @@
 {
-   "iconNames": [
-      "html",
-      "css",
-      "sass",
-      "tailwind",
-      "javascript",
-      "typescript",
-      "react",
-      "redux",
-      "react-native",
-      "nextJs",
-      "nodeJs",
-      "express",
-      "mongoDB",
-      "docker",
-      "github"
-   ],
    "tools": [
       "HTML",
       "CSS",
@@ -81,50 +64,6 @@
                "d": "M55 10H9a4 4 0 0 0-4 4v34a4 4 0 0 0 4 4h46a4 4 0 0 0 4-4V14a4 4 0 0 0-4-4zm0 35.738C54.954 47 53.901 48 52.618 48H49.5L51 21 32 33 13 22l1.5 26h-3.118C10.099 48 9.046 47 9 45.738V16.289c0-1.25 1.03-2.263 2.3-2.263h1.2L32 29l19.5-14.974h1.2c1.27 0 2.3 1.013 2.3 2.263v29.449z"
             }
          }
-      }
-   ],
-   "profile": [
-      {
-         "title": "Full-Stack Developer",
-         "subtitle": "School of Applied Technology </salt>",
-         "description": "Intensive three month training program for full stack web development with a focus on TDD, mob programming, and applied learning. ",
-         "date": "2022 - present",
-         "id": "1"
-      },
-      {
-         "title": "Bachelor of Electrical Engineering",
-         "subtitle": "University of Debreecen, Hungary",
-         "description": "Graduated from faculty of Science Technology University of Debrecen.",
-         "date": "2013 - 2018",
-         "id": "2"
-      },
-      {
-         "title": "Associate Degree in Electrical and Electronic",
-         "subtitle": "University of Dicle, Turkey",
-         "description": "Graduated from faculty of Enginnering in Electric and Energy",
-         "date": "2010 - 2012",
-         "id": "3"
-      },
-      {
-         "title": "Entrepreneur",
-         "subtitle": "NordicSoil AB",
-         "description": "Research and develop a business plan, and strategy for an organic fertilizer production start-up company.",
-         "date": "2020 - 2021",
-         "id": "4"
-      },
-      {
-         "title": "Entrepreneur",
-         "subtitle": "Tav-Sun Ltd",
-         "description": "Collaborating with companies in foreign trade fields and assisting in research and development to determine relevant demands.",
-         "date": "2018 - 2019",
-         "id": "5"
-      },
-      {
-         "title": "Internship",
-         "subtitle": "University of Debrecen",
-         "description": "Development and implementation of PLC controlled fire extinguishing system by using PLC programming languages based on CodeSys standards",
-         "date": "2017",
-         "id": "6"
       }
    ],
    "projects": [

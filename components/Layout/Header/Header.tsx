@@ -17,8 +17,9 @@ const Header = (): JSX.Element => {
                      I&apos;m <span className="border-b-4 border-Green">Seyfettin Baskara.</span>
                   </h2>
                   <p className="text-base">
-                     Based in the Stockholm, I’m a full-stack developer passionate about building accessible web apps
-                     that users love.
+                     Based in the Stockholm, I&apos;m fascinated by the endless possibilities of software development. I
+                     love the feeling of solving problems, creating something new, and turning an idea into reality
+                     through code. I always aim to deliver efficiency to the team also the work environment.
                   </p>
                   <ContactMe />
                </div>

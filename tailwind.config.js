@@ -22,6 +22,7 @@ module.exports = {
             White: '#FFFFFF',
             Grey: '#d9d9d9',
             Green: '#4EE1A0',
+            TimelineBorder: '#FFC100',
          },
       },
    },

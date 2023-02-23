@@ -149,5 +149,59 @@
       "title": "Seyfettin Baskara",
       "description": "Full-stack software developer with experience  mainly in Javascript, TypeScript, GoLang, React, NextJs, NodeJS. Skilled in delivering high-quality software solutions on time. Passionate about solving complex problems and creating innovative solutions.",
       "keywords": "Software developer, FullStack developer, Front-end development, Back-end development, Web development, Mobile development, Javascript, TypeScript, GoLang, React, NextJs, NodeJS"
+   },
+   "profile": {
+      "education": [
+         {
+            "id": 1,
+            "program": "Full-Stack JavaScript Traineeship",
+            "school": "School of Applied Technology </salt>",
+            "date": "Jan 2022 - April 2022"
+         },
+         {
+            "id": 2,
+            "program": "Electrical Engineering B.Sc Degree",
+            "school": "University of Debrecen, Hungary",
+            "date": "Sept 2013 - Jan 2018"
+         },
+         {
+            "id": 3,
+            "program": "Internship",
+            "school": "University of Debrecen, Hungary",
+            "date": "Jan 2017 - Aug 2017"
+         },
+         {
+            "id": 4,
+            "program": "Electrical and Electronic Associate Degree",
+            "school": "University of Dicle, Turkey",
+            "date": "Sept 2010 - June 2012"
+         }
+      ],
+      "experience": [
+         {
+            "id": 1,
+            "title": "Full-Stack Developer",
+            "company": "</Salt>",
+            "date": "Jan 2022 - Jan 2023"
+         },
+         {
+            "id": 2,
+            "title": "Entrepreneur",
+            "company": "NordicSoil AB",
+            "date": "Sept 2020 - April 2021"
+         },
+         {
+            "id": 3,
+            "title": "Entrepreneur",
+            "company": "Tav-Sun Ltd",
+            "date": "Mar 2018 - Jan 2020"
+         },
+         {
+            "id": 4,
+            "title": "Assistant Manager",
+            "company": "Baskale Insaat Ltd",
+            "date": "Jun 2014 - Sept 2015"
+         }
+      ]
    }
 }

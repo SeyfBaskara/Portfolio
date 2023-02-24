@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import WorkExperience from './WorkExperience'
 import Education from './Education'
 
 const TimeLine = (): JSX.Element => {
+   const [isExperience, setIsExperience] = useState<boolean>(true)
+
    const handleShowButton = () => {
-      console.log('show button')
+      setIsExperience(!isExperience)
    }
 
    return (
@@ -14,13 +16,15 @@ const TimeLine = (): JSX.Element => {
             <header className="flex flex-col items-center max-w-sm gap-3 mb-10 sticky md:items-start md:mb-0 md:top-36 md:pr-6 lg:w-1/3">
                <h1 className="text-large font-bold">Timeline</h1>
                <p className="text-base ">
-                  Timeline present my work experiences. Click show button to preview education background.
+                  {`Timeline present my ${isExperience ? 'work experiences' : 'education background'}. Click show ${
+                     isExperience ? 'education' : 'experience'
+                  } button to preview ${isExperience ? 'education background' : 'work experiences'}.`}
                </p>
                <button
                   onClick={handleShowButton}
                   className="font-semibold tracking-widest border-b-2 border-Green pb-1 outline-none hover:text-Green focus:text-Green "
                >
-                  SHOW EDUCATION
+                  {`SHOW ${isExperience ? 'EDUCATION' : 'EXPERIENCE'}`}
                </button>
             </header>
 
@@ -30,8 +34,7 @@ const TimeLine = (): JSX.Element => {
                      <div className="border-2-2 border-yellow-555 absolute h-full border-2 border-Green right-1/2 "></div>
                      <div className="border-2-2 border-yellow-555 absolute h-full border-2 border-Green left-1/2 "></div>
 
-                     <WorkExperience />
-                     <Education />
+                     {isExperience ? <WorkExperience /> : <Education />}
                   </div>
                   <div className="mx-auto -mt-24 md:-mt-24 md:ml-28">
                      <Image src="/images/timeline.png" alt="images" width={375} height={258} />

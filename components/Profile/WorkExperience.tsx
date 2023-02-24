@@ -1,6 +1,15 @@
 import React from 'react'
 
-const WorkExperience = (): JSX.Element => {
+interface IExperinceProps {
+   experience: {
+      id: number
+      title: string
+      company: string
+      date: string
+   }[]
+}
+
+const WorkExperience: React.FC<IExperinceProps> = ({ experience }) => {
    return (
       <section>
          <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">

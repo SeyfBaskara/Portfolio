@@ -3,7 +3,26 @@ import Image from 'next/image'
 import WorkExperience from './WorkExperience'
 import Education from './Education'
 
-const TimeLine = (): JSX.Element => {
+interface IProfileProps {
+   profile: {
+      education: IEducation[]
+      experience: IExperience[]
+   }
+}
+interface IEducation {
+   id: number
+   program: string
+   school: string
+   date: string
+}
+interface IExperience {
+   id: number
+   title: string
+   company: string
+   date: string
+}
+
+const TimeLine: React.FC<IProfileProps> = ({ profile }) => {
    const [isExperience, setIsExperience] = useState<boolean>(true)
 
    const handleShowButton = () => {
@@ -34,7 +53,7 @@ const TimeLine = (): JSX.Element => {
                      <div className="border-2-2 border-yellow-555 absolute h-full border-2 border-Green right-1/2 "></div>
                      <div className="border-2-2 border-yellow-555 absolute h-full border-2 border-Green left-1/2 "></div>
 
-                     {isExperience ? <WorkExperience /> : <Education />}
+                     {isExperience ? <WorkExperience experience={profile.experience} /> : <Education />}
                   </div>
                   <div className="mx-auto -mt-24 md:-mt-24 md:ml-28">
                      <Image src="/images/timeline.png" alt="images" width={375} height={258} />

@@ -11,7 +11,7 @@ interface IExperinceProps {
 
 const WorkExperience: React.FC<IExperinceProps> = ({ experience }) => {
    return (
-      <section>
+      <>
          <ul>
             {experience.map((item, index) => (
                <li
@@ -22,14 +22,14 @@ const WorkExperience: React.FC<IExperinceProps> = ({ experience }) => {
                >
                   <div className="order-1 w-5/12"></div>
                   <div className={`order-1 w-5/12 px-1 py-4 ${index % 2 == 0 ? 'text-right' : 'text-left'} `}>
-                     <h4 className="mb-3 text-base text-yellow-300">{item.title}</h4>
-                     <p className="mb-3 font-bold text-lg md:text-2xl">{item.date}</p>
-                     <p className="text-sm md:text-base leading-snug text-gray-50 text-opacity-100">{item.company}</p>
+                     <h4 className="text-md font-bold">{item.title}</h4>
+                     <p className="text-base font-semibold">{item.company}</p>
+                     <p className="text-[1rem] text-Grey">{item.date}</p>
                   </div>
                </li>
             ))}
          </ul>
-      </section>
+      </>
    )
 }
 

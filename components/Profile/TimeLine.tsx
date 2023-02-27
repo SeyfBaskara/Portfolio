@@ -55,9 +55,9 @@ const TimeLine: React.FC<IProfileProps> = ({ profile }) => {
 
                      {isExperience ? <WorkExperience experience={profile.experience} /> : <Education />}
                   </div>
-                  <div className="mx-auto -mt-24 md:-mt-24 md:ml-28">
+                  {/* <div className="mx-auto -mt-24 md:-mt-24 md:ml-28">
                      <Image src="/images/timeline.png" alt="images" width={375} height={258} />
-                  </div>
+                  </div> */}
                </div>
             </div>
          </div>

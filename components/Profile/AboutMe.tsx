@@ -8,7 +8,7 @@ const AboutMe = (): JSX.Element => {
 
    return (
       <section className="p-4 md:w-11/12 md:m-auto lg:w-4/5">
-         <div className="flex flex-col items-center gap-5 mt-3">
+         <div className="flex flex-col items-center gap-5 mt-3 border-b pb-12">
             <button
                onClick={() => setIsShowing(!isShowing)}
                onMouseEnter={() => setIsAnimate(true)}

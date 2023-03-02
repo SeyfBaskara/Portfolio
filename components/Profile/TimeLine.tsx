@@ -20,6 +20,7 @@ interface IExperience {
    title: string
    company: string
    date: string
+   description: string
 }
 
 const TimeLine: React.FC<IProfileProps> = ({ profile }) => {

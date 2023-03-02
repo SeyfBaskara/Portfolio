@@ -182,25 +182,29 @@
             "id": 1,
             "title": "Full-Stack Developer",
             "company": "</Salt>",
-            "date": "Jan 2022 - Jan 2023"
+            "date": "Jan 2022 - Jan 2023",
+            "description": "I contributed to an internal frontend project utilizing NextJs, Contentful, and other third-party technologies. Additionally, I completed a weekly project as part of my post-graduate program."
          },
          {
             "id": 2,
             "title": "Entrepreneur",
             "company": "NordicSoil AB",
-            "date": "Sept 2020 - April 2021"
+            "date": "Sept 2020 - April 2021",
+            "description": "I was responsible for a wide range of work, including business planning and development, marketing, and building relationships with customers and partners."
          },
          {
             "id": 3,
             "title": "Entrepreneur",
             "company": "Tav-Sun Ltd",
-            "date": "Mar 2018 - Jan 2020"
+            "date": "Mar 2018 - Jan 2020",
+            "description": "Carry out B2B work in the field of foreign trade in a variety of tasks related to sales, business relations, and development."
          },
          {
             "id": 4,
             "title": "Assistant Manager",
             "company": "Baskale Insaat Ltd",
-            "date": "Jun 2014 - Sept 2015"
+            "date": "Jun 2014 - Sept 2015",
+            "description": "I was responsible for ensuring proper workforce allocation and mobilization alongside assisting the constructor manager in planning and executing building construction activities daily on the site."
          }
       ]
    }

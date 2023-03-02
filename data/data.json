@@ -156,7 +156,8 @@
             "id": 1,
             "program": "Full-Stack JavaScript Traineeship",
             "school": "School of Applied Technology </salt>",
-            "date": "Jan 2022 - April 2022"
+            "date": "Jan 2022 - April 2022",
+            "description": "Intensive three months training program for full-stack web development with a focus on TDD, mob programming, and applied learning."
          },
          {
             "id": 2,
@@ -168,7 +169,8 @@
             "id": 3,
             "program": "Internship",
             "school": "University of Debrecen, Hungary",
-            "date": "Jan 2017 - Aug 2017"
+            "date": "Jan 2017 - Aug 2017",
+            "description": "Development and implementation of a fire extinguishing system using PLC programming languages based on CodeSys."
          },
          {
             "id": 4,

@@ -14,6 +14,7 @@ interface IEducation {
    program: string
    school: string
    date: string
+   description?: string
 }
 interface IExperience {
    id: number
@@ -54,7 +55,11 @@ const TimeLine: React.FC<IProfileProps> = ({ profile }) => {
                      <div className="border-2-2 border-yellow-555 absolute h-full border-2 border-Green right-1/2 "></div>
                      <div className="border-2-2 border-yellow-555 absolute h-full border-2 border-Green left-1/2 "></div>
 
-                     {isExperience ? <WorkExperience experience={profile.experience} /> : <Education />}
+                     {isExperience ? (
+                        <WorkExperience experience={profile.experience} />
+                     ) : (
+                        <Education education={profile.education} />
+                     )}
                   </div>
                   {/* <div className="mx-auto -mt-24 md:-mt-24 md:ml-28">
                      <Image src="/images/timeline.png" alt="images" width={375} height={258} />

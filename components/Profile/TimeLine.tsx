@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Image from 'next/image'
 import WorkExperience from './WorkExperience'
 import Education from './Education'
 
@@ -61,9 +60,6 @@ const TimeLine: React.FC<IProfileProps> = ({ profile }) => {
                         <Education education={profile.education} />
                      )}
                   </div>
-                  {/* <div className="mx-auto -mt-24 md:-mt-24 md:ml-28">
-                     <Image src="/images/timeline.png" alt="images" width={375} height={258} />
-                  </div> */}
                </div>
             </div>
          </div>

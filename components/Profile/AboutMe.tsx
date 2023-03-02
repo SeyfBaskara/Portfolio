@@ -48,11 +48,3 @@ const AboutMe = (): JSX.Element => {
 }
 
 export default AboutMe
-
-/**
- * TODO
- * should have toggle about me button display about me text
- * should have replace green border bottom with animated arrow icon
- * should scroll smoothly when button triggers
- *
- */

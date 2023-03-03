@@ -10,7 +10,7 @@ const Home: NextPage = () => {
    return (
       <Layout metaData={data.metaData}>
          <>
-            <AboutMe />
+            <AboutMe about={data.profile.about} />
             <TimeLine profile={data.profile} />
             <Technologies techStack={data.tools} />
             <Projects projects={data.projects} />

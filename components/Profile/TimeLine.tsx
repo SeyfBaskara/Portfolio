@@ -36,9 +36,11 @@ const TimeLine: React.FC<IProfileProps> = ({ profile }) => {
             <header className="flex flex-col items-center max-w-sm gap-3 mb-10 sticky md:items-start md:mb-0 md:top-36 md:pr-6 lg:w-1/3">
                <h1 className="text-large font-bold">Timeline</h1>
                <p className="text-base ">
-                  {`Timeline present my ${isExperience ? 'work experiences' : 'education background'}. Click show ${
-                     isExperience ? 'education' : 'experience'
-                  } button to preview ${isExperience ? 'education background' : 'work experiences'}.`}
+                  {`Timeline present my ${
+                     isExperience ? 'work experiences' : 'education background'
+                  }. Click the "Show ${isExperience ? 'Education' : 'Experience'}" button to preview ${
+                     isExperience ? 'education background' : 'work experiences'
+                  }.`}
                </p>
                <button
                   onClick={handleShowButton}

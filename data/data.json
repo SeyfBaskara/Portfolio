@@ -185,30 +185,30 @@
             "title": "Full-Stack Developer",
             "company": "</Salt>",
             "date": "Jan 2022 - Jan 2023",
-            "description": "I contributed to an internal frontend project utilizing NextJs, Contentful, and other third-party technologies. Additionally, I completed a weekly project as part of my post-graduate program."
+            "description": "I contributed to an internal frontend project using Next.js, Contentful, and other third-party technologies. Additionally, I completed a weekly project as part of my postgraduate program."
          },
          {
             "id": 2,
             "title": "Entrepreneur",
             "company": "NordicSoil AB",
             "date": "Sept 2020 - April 2021",
-            "description": "I was responsible for a wide range of work, including business planning and development, marketing, and building relationships with customers and partners."
+            "description": "I was responsible for a variety of tasks, including business planning and development, marketing, and cultivating relationships with customers and partners."
          },
          {
             "id": 3,
             "title": "Entrepreneur",
             "company": "Tav-Sun Ltd",
             "date": "Mar 2018 - Jan 2020",
-            "description": "Carry out B2B work in the field of foreign trade in a variety of tasks related to sales, business relations, and development."
+            "description": "I carried out B2B work in the field of foreign trade, performing a variety of tasks related to sales, business relations, and development."
          },
          {
             "id": 4,
             "title": "Assistant Manager",
             "company": "Baskale Insaat Ltd",
             "date": "Jun 2014 - Sept 2015",
-            "description": "I was responsible for ensuring proper workforce allocation and mobilization alongside assisting the constructor manager in planning and executing building construction activities daily on the site."
+            "description": "My responsibilities included ensuring proper workforce allocation and mobilization, as well as assisting the construction manager in planning and executing daily building construction activities on the site."
          }
       ],
-      "about": "I commenced my academic journey in the field of electricity and electronics, completing a two-year program in Turkey. Subsequently, I obtained my bachelor's degree in electrical engineering from Hungary. Post-graduation, I established a company and spent two years working in international business. Following this, I ventured into a startup project in agriculture solutions, with primary responsibilities including business planning and relationship management.\n\nAround two years ago, I decided to pursue my career in software development. Over the next year, I dedicated myself to honing my skills in both front-end and back-end development. My front-end proficiencies encompassed Javascript, HTML, CSS, and the associated ecosystem, React, Redux, and SASS. In parallel, I attained comprehensive experience with Nodejs, ExpressJS, MongoDB, and Mongoose in the back-end.\n\nI then completed an exhaustive three-month full-stack Javascript training program at the School of Applied Technology, </ Salt> company. The program encompassed web standards, the software industry, mob programming, the TDD approach, working agile methods, and several other languages and frameworks, including Typescript, NextJs, Contentful, SQL, GraphQL, Docker, AWS, and more.\n\nPost-training, I secured a one-year contract as a full-stack developer, contributing to a front-end project that utilized NextJs, Contentful, and several other third-party technologies. Additionally, I built various weekly projects as part of the post-graduate program."
+      "about": "I embarked on my academic journey in the field of electricity and electronics, completing a two-year program in Turkey. I then went on to obtain my bachelor's degree in electrical engineering from Hungary. After graduation, I established a company and spent two years working in international business. Later, I ventured into a startup project in agriculture solutions, where my primary responsibilities included business planning and relationship management. \n\nAround two years ago, I made a career shift and decided to pursue software development. I dedicated myself to honing my skills in both front-end and back-end development over the next year. My front-end proficiencies encompassed Javascript, HTML, CSS, and the associated ecosystem, including React, Redux, and SASS. In parallel, I attained comprehensive experience with Node.js, Express.js, MongoDB, and Mongoose in the back-end. \n\nI then completed an exhaustive three-month full-stack Javascript training program at the School of Applied Technology, </ Salt> company. The program covered web standards, the software industry, mob programming, the TDD approach, working agile methods, and several other languages and frameworks, including Typescript, Next.js, Contentful, SQL, GraphQL, Docker, AWS, and more. \n\nPost-training, I secured a one-year contract as a full-stack developer, contributing to a front-end project that utilized Next.js, Contentful, and several other third-party technologies. Additionally, I built various weekly projects as part of the post-graduate program.\n\nOverall, my diverse experiences have provided me with a unique perspective and skill set that I bring to my current role as a full-stack software developer."
    }
 }

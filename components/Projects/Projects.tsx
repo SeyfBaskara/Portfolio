@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import ContactMe from '../Buttons/ContactMe'
+import MoreProjects from '../Buttons/MoreProjects'
 import CustomImage from '../Image/CustomImage'
 import ProjectTechStack from './ProjectTechStack'
 import ViewButtons from '../Buttons/ViewButtons'
@@ -32,7 +32,7 @@ const Projects: React.FC<IProps> = ({ projects }) => {
       <section aria-label="projects" className="p-4 md:w-11/12 md:m-auto lg:w-4/5">
          <header className="flex items-center justify-between">
             <h1 className="text-large font-bold">Projects</h1>
-            <ContactMe />
+            <MoreProjects />
          </header>
 
          <article>

@@ -1,5 +1,3 @@
-import PaternCircle from './PaternCircle'
-
 interface IProps {
    techStack: string[]
 }
@@ -16,7 +14,6 @@ const Technologies: React.FC<IProps> = ({ techStack }) => {
                ))}
             </ul>
          </div>
-         <PaternCircle />
       </section>
    )
 }

@@ -1,6 +1,5 @@
 import ProfilePhoto from './ProfilePhoto'
 import ContactMe from '../../Buttons/ContactMe'
-import PaternCircle from '../../PaternCircle'
 
 const Header = (): JSX.Element => {
    return (
@@ -25,8 +24,6 @@ const Header = (): JSX.Element => {
                </div>
             </article>
          </section>
-
-         <PaternCircle header={true} />
       </header>
    )
 }

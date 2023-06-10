@@ -15,10 +15,8 @@ const Header = (): JSX.Element => {
                   <h2 className="text-[2rem] font-bold">
                      I&apos;m <span className="border-b-4 border-Green">Seyfettin Baskara.</span>
                   </h2>
-                  <p className="text-base">
-                     Based in Stockholm, I am fascinated by the endless possibilities of software development. I enjoy
-                     solving problems, creating something new, and turning ideas into reality through code. I always
-                     strive to deliver efficiency to the team and improve the work environment.
+                  <p className="text-base lg:w-10/12">
+                     I am a Full Stack Developer based in Stockholm. I enjoy bringing ideas to life through code.
                   </p>
                   <ContactMe />
                </div>

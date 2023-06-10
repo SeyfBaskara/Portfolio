@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import Layout from '../components/Layout'
 import AboutMe from '../components/Profile/AboutMe'
-import TimeLine from '../components/Profile/TimeLine'
 import Projects from '../components/Projects/Projects'
 import Technologies from '../components/Technologies'
 import data from '../data/data.json'
@@ -11,7 +10,6 @@ const Home: NextPage = () => {
       <Layout metaData={data.metaData}>
          <>
             <AboutMe about={data.profile.about} />
-            <TimeLine profile={data.profile} />
             <Technologies techStack={data.tools} />
             <Projects projects={data.projects} />
          </>

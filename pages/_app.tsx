@@ -11,7 +11,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
                Thanks for visiting! My portfolio is currently undergoing a refresh to showcase my latest work.
             </p>
             <p className="text-md">
-               If you'd like to get in touch or discuss a project, feel free to{' '}
+               If you&apos;d like to get in touch or discuss a project, feel free to{' '}
                <a href="mailto:seyfettin.baskara@gmail.com" className="text-blue-400 underline">
                   send me an email
                </a>
